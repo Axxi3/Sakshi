@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+
+.font-figtree {
+  font-family: var(--font-figtree), sans-serif;
+}
+
+.font-philosopher {
+  font-family: var(--font-philosopher), serif;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
