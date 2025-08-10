@@ -43,8 +43,8 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-white/60 text-sm sm:text-base md:text-xl mb-6 sm:mb-8 leading-relaxed font-light max-w-2xl">
-            We design digital platforms that move fast, feel great, and actually convert. Whether you're scaling a 
-            startup or refreshing a brand — we've got your back.
+            We design digital platforms that move fast, feel great, and actually convert. Whether you&apos;re scaling a 
+            startup or refreshing a brand — we&apos;ve got your back.
           </p>
 
           {/* CTA Buttons */}

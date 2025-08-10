@@ -193,7 +193,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
 
             {/* Testimonial Text */}
             <p className="text-[#6b6b6b] leading-relaxed mb-5 text-sm md:text-base">
-                "{testimonial.text}"
+                &quot;{testimonial.text}&quot;
             </p>
 
             {/* Author */}

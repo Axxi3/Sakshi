@@ -4,7 +4,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRight, Clock, Users, Star } from 'lucide-react';
+import { ArrowRight, Clock } from 'lucide-react';
 import PageHeader from '../component/About-us/Header';
 
 interface Treatment {
