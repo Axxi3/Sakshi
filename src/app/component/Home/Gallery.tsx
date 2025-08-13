@@ -15,51 +15,39 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=300&fit=crop",
+    src: "/1.webp",
     alt: "Relaxing spa treatment",
     title: "Abhyanga Therapy"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop",
+    src: "/2.webp",
     alt: "Ayurvedic massage session",
     title: "Therapeutic Massage"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+    src: "/3.webp",
     alt: "Ayurvedic herbs and oils",
     title: "Natural Herbs"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&h=300&fit=crop",
+    src: "/4.webp",
     alt: "Meditation and wellness",
     title: "Meditation Space"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+    src: "/5.webp",
     alt: "Wellness treatment room",
     title: "Treatment Room"
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop",
+    src: "/6.webp",
     alt: "Panchakarma therapy",
     title: "Panchakarma"
-  },
-  {
-    id: 7,
-    src: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=300&fit=crop",
-    alt: "Shirodhara treatment",
-    title: "Shirodhara"
-  },
-  {
-    id: 8,
-    src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop",
-    alt: "Ayurvedic consultation",
-    title: "Consultation"
   }
 ];
 
@@ -70,7 +58,7 @@ const GallerySection: React.FC = () => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-[#F5B042] to-[#F2B450]  relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-10 right-10 w-40 h-40 bg-orange-100 rounded-full opacity-20 -z-10"></div>
       <div className="absolute bottom-10 left-10 w-32 h-32 bg-green-100 rounded-full opacity-20 -z-10"></div>
@@ -121,7 +109,7 @@ const GallerySection: React.FC = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-[#8b8680] hover:bg-[#7a7570] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="bg-[#C84F1A] hover:bg-[#7a7570] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             View More Gallery
           </motion.button>

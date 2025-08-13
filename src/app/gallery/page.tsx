@@ -204,7 +204,11 @@ const GalleryPage: React.FC = () => {
       />
 
       {/* Gallery Content */}
-      <section className="py-20 bg-[#f8f6f0]">
+      <section 
+       style={{
+        background: 'linear-gradient(180deg, rgb(242, 180, 80), rgb(242, 180, 80))',
+      }}
+      className="py-20 bg-[#f8f6f0]">
         <div className="max-w-7xl mx-auto px-6">
           {/* Introduction */}
           <div className="text-center mb-16 max-w-4xl mx-auto">

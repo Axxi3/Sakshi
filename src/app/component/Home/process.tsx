@@ -27,7 +27,7 @@ const processSteps: ProcessStep[] = [
     id: "03",
     number: "03", 
     title: "Therapeutic Sessions",
-    description: "Experience our diverse range of treatments, including massages, detox therapies, and wellness"
+    description: "Experience our diverse range of treatments, detox therapies, and wellness"
   },
   {
     id: "04",
@@ -39,7 +39,7 @@ const processSteps: ProcessStep[] = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-14 sm:py-20 bg-[#f8f6f0] relative overflow-hidden">
+    <section className="py-14 sm:py-20 bg-[#F2A62B] relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-6 sm:top-10 right-6 sm:right-10 w-28 h-28 sm:w-40 sm:h-40 bg-[#d4c4a8] rounded-full opacity-10 -z-10"></div>
       <div className="absolute bottom-6 sm:bottom-10 left-6 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 bg-[#a8b5a8] rounded-full opacity-10 -z-10"></div>
@@ -95,7 +95,7 @@ const ProcessSection = () => {
             Ready to begin your wellness journey? Let our experienced practitioners guide you through each step.
           </p>
           
-          <button className="bg-[#8b8680] hover:bg-[#7a7570] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base">
+          <button className="bg-[#C84F1A] hover:bg-[#7a7570] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base">
             Start Your Journey
           </button>
         </div>

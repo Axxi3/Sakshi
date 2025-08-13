@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Link 
               href="/consultation" 
-              className="relative bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/30 overflow-hidden group"
+              className="relative bg-[#C84F1A] hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/30 overflow-hidden group"
             >
               <span className="relative z-10">Book Consultation</span>
               <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -73,7 +73,7 @@ const Navbar = () => {
           {/* Enhanced Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden text-white p-2.5 rounded-lg bg-white/20 hover:bg-white/30 transition-all duration-200 backdrop-blur-sm border border-white/20"
+            className="md:hidden text-white p-2.5 rounded-lg bg-black/20 hover:bg-white/30 transition-all duration-200 backdrop-blur-sm border border-white/20"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -86,7 +86,7 @@ const Navbar = () => {
             ? 'max-h-80 opacity-100 visible' 
             : 'max-h-0 opacity-0 invisible overflow-hidden'
         }`}>
-          <div className="bg-white/20 backdrop-blur-xl rounded-2xl mx-4 my-4 border border-white/30 shadow-2xl overflow-hidden">
+          <div className="bg-white backdrop-blur-xl rounded-2xl mx-4 my-4 border border-white/30 shadow-2xl overflow-hidden">
             <div className="py-6 space-y-1">
               <MobileNavLink href="/" label="Home" onClick={() => setIsMenuOpen(false)} />
               <MobileNavLink href="/about" label="About" onClick={() => setIsMenuOpen(false)} />
@@ -97,7 +97,7 @@ const Navbar = () => {
               <div className="px-6 pt-6">
                 <Link 
                   href="/consultation" 
-                  className="block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-center px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg transform hover:scale-[1.02]"
+                  className="block bg-[#C84F1A] hover:from-orange-600 hover:to-orange-700 text-white text-center px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg transform hover:scale-[1.02]"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Book Consultation
@@ -115,7 +115,7 @@ const Navbar = () => {
 const NavLink: React.FC<{ href: string; label: string }> = ({ href, label }) => (
   <Link 
     href={href} 
-    className="relative text-orange-500  text-sm font-medium px-4 py-2 rounded-full transition-all duration-300 hover:bg-white/10 group"
+    className="relative text-black  text-sm font-medium px-4 py-2 rounded-full transition-all duration-300 hover:bg-white/10 group"
   >
     <span className="relative z-10">{label}</span>
     <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-orange-400 group-hover:w-6 transition-all duration-300 rounded-full"></div>
@@ -126,7 +126,7 @@ const NavLink: React.FC<{ href: string; label: string }> = ({ href, label }) => 
 const MobileNavLink: React.FC<{ href: string; label: string; onClick: () => void }> = ({ href, label, onClick }) => (
   <Link 
     href={href} 
-    className="block text-white hover:text-orange-200 hover:bg-white/15 px-6 py-3 transition-all duration-200 font-medium border-l-2 border-transparent hover:border-orange-400"
+    className="block text-black hover:text-orange-200 hover:bg-white/15 px-6 py-3 transition-all duration-200 font-medium border-l-2 border-transparent hover:border-orange-400"
     onClick={onClick}
   >
     {label}
