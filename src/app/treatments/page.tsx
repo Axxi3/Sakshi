@@ -232,8 +232,8 @@ const TreatmentsPage: React.FC = () => {
         backgroundImage="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=2070&q=80"
       />
       <section
-        style={{ background: 'linear-gradient(180deg, rgb(242, 180, 80), rgb(242, 180, 80))' }}
-        className="py-20"
+        
+        className="py-20 bg-[#FDF8F3]"
       >
         <div className="max-w-7xl mx-auto px-6">
           {/* Intro */}

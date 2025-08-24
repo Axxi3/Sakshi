@@ -58,7 +58,7 @@ const GallerySection: React.FC = () => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-[#F5B042] to-[#F2B450]  relative overflow-hidden">
+    <section className="py-20 bg-[#FDF8F3] relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-10 right-10 w-40 h-40 bg-orange-100 rounded-full opacity-20 -z-10"></div>
       <div className="absolute bottom-10 left-10 w-32 h-32 bg-green-100 rounded-full opacity-20 -z-10"></div>

@@ -43,10 +43,8 @@ const FAQSection: React.FC = () => {
 
   return (
     <section
-     style={{
-        background: 'linear-gradient(180deg, rgb(242, 180, 80), rgb(242, 180, 80))',
-      }}
-    className="py-20 bg-[#f8f6f0] relative overflow-hidden">
+ 
+    className="py-20 bg-[#FDF8F3] relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-20 right-10 w-32 h-32 bg-[#d4c4a8] rounded-full opacity-20 -z-10"></div>
       <div className="absolute bottom-20 left-10 w-24 h-24 bg-[#a8b5a8] rounded-full opacity-20 -z-10"></div>

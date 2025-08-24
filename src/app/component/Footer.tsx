@@ -7,7 +7,7 @@ import { Leaf, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Youtube } from
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#D18306] text-white relative overflow-hidden">
+    <footer className="bg-[#55211C] text-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-10 right-20 w-32 h-32 bg-white/5 rounded-full -z-10"></div>
       <div className="absolute bottom-20 left-10 w-24 h-24 bg-white/5 rounded-full -z-10"></div>

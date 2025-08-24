@@ -205,10 +205,8 @@ const GalleryPage: React.FC = () => {
 
       {/* Gallery Content */}
       <section 
-       style={{
-        background: 'linear-gradient(180deg, rgb(242, 180, 80), rgb(242, 180, 80))',
-      }}
-      className="py-20 bg-[#f8f6f0]">
+      
+      className="py-20 bg-[#FDF8F3]">
         <div className="max-w-7xl mx-auto px-6">
           {/* Introduction */}
           <div className="text-center mb-16 max-w-4xl mx-auto">
@@ -229,7 +227,7 @@ const GalleryPage: React.FC = () => {
                 onClick={() => setActiveCategory(category.id)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeCategory === category.id
-                    ? 'bg-[#8b8680] text-white shadow-lg'
+                    ? 'bg-[#87241A] text-white shadow-lg'
                     : 'bg-white/60 text-[#6b6b6b] hover:bg-white/80 border border-white/50'
                 }`}
                 whileHover={{ scale: 1.05 }}
