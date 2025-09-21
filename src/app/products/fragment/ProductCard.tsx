@@ -12,9 +12,21 @@ export default function ProductCard({ product }: ProductCardProps) {
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
 
+  // WhatsApp business number (replace with your actual WhatsApp business number)
+  const WHATSAPP_NUMBER = "+919759044199"; // Replace with your WhatsApp number (without + or special characters)
+
   const handleEnquire = () => {
-    // Enquire logic - could open modal, redirect to contact form, or send message
-    console.log('Enquiry for:', product.name);
+    // Create the pre-filled message
+    const message = `Hi! I want more info on ${product.name}`;
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in new tab/window
+    window.open(whatsappUrl, '_blank');
   };
 
   const toggleWishlist = () => {
@@ -29,7 +41,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     <div className="group cursor-pointer ">
       
       {/* Image Container */}
-      <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-50 mb-3">
+      <div className="relative aspect-square overflow-hidden rounded-xl  mb-3">
         <img
           src={product.image}
           alt={product.name}
@@ -79,9 +91,9 @@ export default function ProductCard({ product }: ProductCardProps) {
         <button
           onClick={handleEnquire}
           className="absolute bottom-3 left-1/2 transform -translate-x-1/2 
-                   flex items-center gap-2 px-6 py-2.5 bg-gray-900 text-white text-sm 
+                   flex items-center gap-2 px-6 py-2.5 bg-green-600 text-white text-sm 
                    font-medium rounded-lg opacity-0 group-hover:opacity-100 
-                   transition-all duration-300 hover:bg-gray-800 shadow-lg"
+                   transition-all duration-300 hover:bg-green-700 shadow-lg"
         >
           <ChatBubbleLeftRightIcon className="h-4 w-4" />
           Enquire Now
@@ -135,7 +147,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <button
           onClick={handleEnquire}
           className="sm:hidden w-full mt-3 flex items-center justify-center gap-2 px-4 py-2.5 
-                   bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 
+                   bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 
                    transition-colors"
         >
           <ChatBubbleLeftRightIcon className="h-4 w-4" />

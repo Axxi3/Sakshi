@@ -9,10 +9,10 @@ import { Product, FilterOptions } from './interface';
 const mockProducts: Product[] = [
   {
     id: 1,
-    name: "Minimalist Desk Lamp",
+    name: "Gulkand",
     price: 89,
     originalPrice: 129,
-    image: "/api/placeholder/280/280",
+    image: "https://drive.google.com/uc?export=view&id=1mdK8WPOrduWnjkPlquQj5r8UMxMo2gVA",
     category: "Home & Living",
     brand: "Nordic",
     rating: 4.8,
@@ -21,10 +21,10 @@ const mockProducts: Product[] = [
   },
   {
     id: 2,
-    name: "Ceramic Coffee Mug",
+    name: "Product 2",
     price: 24,
-    image: "/api/placeholder/280/280",
-    category: "Kitchen",
+    image: "https://drive.google.com/uc?export=view&id=1L6emI2g3s_cr7sbJKHN2JsrrK_R1Zacg",
+    category: "Kitchen", 
     brand: "Artisan",
     rating: 4.6,
     reviews: 89,
@@ -32,28 +32,43 @@ const mockProducts: Product[] = [
   },
   {
     id: 3,
-    name: "Wool Throw Blanket",
+    name: "Elixr",
     price: 78,
     originalPrice: 95,
-    image: "/api/placeholder/280/280",
+    image: "https://drive.google.com/uc?export=view&id=1MkIpI0JyWI7V4_gsTNqMOYOQy_sU7grC",
     category: "Home & Living",
-    brand: "Cozy Co",
+    brand: "Cozy Co", 
     rating: 4.7,
     reviews: 203,
     inStock: false,
   },
   {
     id: 4,
-    name: "Glass Water Bottle",
+    name: "Keshamrit Hair Oil",
     price: 32,
-    image: "/api/placeholder/280/280",
+    image: "https://drive.google.com/uc?export=view&id=1gOCRaNfJbuqg6WgGYJWsghSm9rvQnGQd",
     category: "Lifestyle",
     brand: "Pure",
     rating: 4.5,
     reviews: 67,
     inStock: true,
+  },
+  {
+    id: 5,
+    name: "Sattva Roll",
+    price: 45,
+    image: "https://drive.google.com/uc?export=view&id=1a77e0b4hDC4yjjZUrCJ-6wGKUL3tdqSh",
+    category: "Lifestyle",
+    brand: "Pure",
+    rating: 4.3,
+    reviews: 34,
+    inStock: true,
   }
 ];
+
+
+
+
 
 export default function ProductPage() {
   const [searchQuery, setSearchQuery] = useState('');
