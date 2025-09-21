@@ -17,7 +17,7 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ 
   title, 
   breadcrumbs,
-  backgroundImage = "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+  backgroundImage = "/bg.webp"
 }) => {
   return (
     <section className="relative h-80 flex items-center justify-center overflow-hidden">
@@ -25,7 +25,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 opacity-100 bg-gradient-to-r from-black/60 via-black/40 to-black/60 z-10"></div>
         <img 
-          src={backgroundImage}
+           src="/bg.webp"
           alt={`${title} page header`}
           className="w-full h-full object-cover"
         />

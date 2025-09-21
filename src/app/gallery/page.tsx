@@ -17,43 +17,14 @@ interface GalleryImage {
 
 const galleryData: GalleryImage[] = [
   // Treatment Rooms
-  {
-    id: 1,
-    src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop",
-    alt: "Panchakarma treatment room",
-    title: "Panchakarma Suite",
-    category: "treatment-rooms",
-    description: "Serene treatment room designed for complete detoxification therapy"
-  },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=600&fit=crop",
-    alt: "Abhyanga massage room",
-    title: "Abhyanga Therapy Room",
-    category: "treatment-rooms",
-    description: "Peaceful space for therapeutic oil massage treatments"
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=600&fit=crop",
-    alt: "Shirodhara treatment area",
-    title: "Shirodhara Chamber",
-    category: "treatment-rooms",
-    description: "Specialized room for oil pouring therapy"
-  },
-  {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop",
-    alt: "Private consultation room",
-    title: "Consultation Room",
-    category: "treatment-rooms",
-    description: "Private space for doctor consultations and health assessments"
-  },
+
+
+ 
 
   // Treatments in Action
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&h=600&fit=crop",
+    src: "/t1.webp",
     alt: "Ayurvedic massage session",
     title: "Therapeutic Massage",
     category: "treatments",
@@ -61,7 +32,7 @@ const galleryData: GalleryImage[] = [
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+    src: "/t2.webp",
     alt: "Herbal steam therapy",
     title: "Steam Therapy",
     category: "treatments",
@@ -69,20 +40,13 @@ const galleryData: GalleryImage[] = [
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+    src: "/t3.webp",
     alt: "Oil therapy treatment",
     title: "Oil Therapy Session",
     category: "treatments",
     description: "Specialized oil therapy for deep healing"
   },
-  {
-    id: 8,
-    src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-    alt: "Meditation therapy",
-    title: "Meditation & Wellness",
-    category: "treatments",
-    description: "Guided meditation and wellness practices"
-  },
+ 
 
   // Herbs & Products
   {
@@ -121,41 +85,40 @@ const galleryData: GalleryImage[] = [
   // Facility
   {
     id: 13,
-    src: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&h=600&fit=crop",
+    src: "/1.webp",
     alt: "Reception and waiting area",
-    title: "Reception Area",
+  title: "Doctor",
     category: "facility",
-    description: "Welcoming reception and comfortable waiting area"
+    description: "Our Lead doctor"
   },
   {
     id: 14,
-    src: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop",
+    src: "/2.webp",
     alt: "Meditation garden",
-    title: "Meditation Garden",
+  title: "Doctor",
     category: "facility",
-    description: "Peaceful outdoor space for meditation and relaxation"
+    description: "Our Lead doctor"
   },
   {
     id: 15,
-    src: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&h=600&fit=crop&focus=right",
+    src: "/3.webp",
     alt: "Relaxation lounge",
-    title: "Relaxation Lounge",
+    title: "Doctor",
     category: "facility",
-    description: "Comfortable space to relax before and after treatments"
+    description: "Our Lead doctor"
   },
   {
     id: 16,
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop",
+    src: "/5.webp",
     alt: "Yoga and meditation hall",
-    title: "Yoga Hall",
+    title: "Doctor",
     category: "facility",
-    description: "Spacious hall for yoga classes and group meditation"
+    description: "Our Lead doctor"
   }
 ];
 
 const categories = [
   { id: 'all', label: 'All Images', count: galleryData.length },
-  { id: 'treatment-rooms', label: 'Treatment Rooms', count: galleryData.filter(img => img.category === 'treatment-rooms').length },
   { id: 'treatments', label: 'Treatments', count: galleryData.filter(img => img.category === 'treatments').length },
   { id: 'herbs-products', label: 'Herbs & Products', count: galleryData.filter(img => img.category === 'herbs-products').length },
   { id: 'facility', label: 'Our Facility', count: galleryData.filter(img => img.category === 'facility').length }
@@ -301,7 +264,7 @@ const GalleryPage: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a 
-                  href="/consultation"
+                  href="https://wa.me/919759044199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#8b8680] hover:bg-[#7a7570] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 shadow-lg"

@@ -8,10 +8,10 @@ const HeroSection = () => {
   return (
     <section className="relative h-[90vh] md:min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 opacity-35">
+      <div className="absolute inset-0 z-0 opacity-45">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          src="/bg.webp"
           alt="Ayurvedic spa treatment"
           className="w-full h-full object-cover"
         />
@@ -19,15 +19,11 @@ const HeroSection = () => {
 
       {/* Content Container */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="max-w-6xl">
+        <div className="max-w-6xl flex flex-col gap-2">
           {/* Trust Badge */}
-          <div className="flex flex-wrap items-center space-x-2 mb-6 sm:mb-8">
+          <div className="flex flex-wrap items-center space-x-2 mb-6 sm:mb-2">
             <div className="flex items-center space-x-1 bg-white/10 backdrop-blur-md rounded-full px-3 py-1.5 sm:px-4 sm:py-2 border border-white/20">
-              <div className="flex -space-x-1">
-                <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white/80 rounded-full border-2 border-white"></div>
-                <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white/60 rounded-full border-2 border-white"></div>
-                <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white/40 rounded-full border-2 border-white"></div>
-              </div>
+              
               <span className="text-white text-xs sm:text-sm font-medium ml-2">
                 Trusted by 3000+ Customers
               </span>
@@ -50,7 +46,7 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
             <Link 
-              href="/consultation" 
+              href="https://wa.link/lgkhyt" 
               className="group bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 
                         text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-semibold transition-all duration-300 
                         transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2 w-full sm:w-fit"

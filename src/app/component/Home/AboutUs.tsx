@@ -49,7 +49,7 @@ const AboutSection = () => {
             {/* CTA Button */}
             <div className="pt-4 sm:pt-6">
               <Link
-                href="/services"
+                href="/treatments"
                 className="group flex items-center justify-center space-x-2 sm:space-x-3 
                            bg-[#C84F1A] hover:bg-[#7a7570] text-white 
                            px-5 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-base 

@@ -46,27 +46,29 @@ const Navbar = () => {
 
           {/* Enhanced Centered Navigation - Desktop */}
           <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
-            <div className="flex items-center space-x-1 bg-white/20 backdrop-blur-xl rounded-full px-8 py-3 border border-white/30 shadow-2xl hover:bg-white/25 transition-all duration-300">
+            <div className="flex items-center space-x-1 bg-white backdrop-blur-xl rounded-full px-8 py-3 border border-white/30 shadow-2xl  transition-all duration-300">
               <NavLink href="/" label="Home" />
               <div className="w-px h-5 bg-white/30 mx-2"></div>
               <NavLink href="/about" label="About" />
               <div className="w-px h-5 bg-white/30 mx-2"></div>
               <NavLink href="/treatments" label="Treatments" />
+                <div className="w-px h-5 bg-white/30 mx-2"></div>
+              <NavLink href="/products" label="Products" />
               <div className="w-px h-5 bg-white/30 mx-2"></div>
               <NavLink href="/gallery" label="Gallery" />
               <div className="w-px h-5 bg-white/30 mx-2"></div>
-              <NavLink href="/contact" label="Contact" />
+              <NavLink href="https://wa.link/lgkhyt" label="Contact" />
             </div>
           </div>
 
           {/* Enhanced CTA Button */}
           <div className="hidden md:block">
             <Link 
-              href="/consultation" 
-              className="relative bg-[#C84F1A] hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/30 overflow-hidden group"
+              href="https://wa.me/919759044199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F" 
+              className="relative bg-[#C84F1A]  text-white px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/30 overflow-hidden group"
             >
               <span className="relative z-10">Book Consultation</span>
-              <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              
             </Link>
           </div>
 
@@ -96,7 +98,7 @@ const Navbar = () => {
               
               <div className="px-6 pt-6">
                 <Link 
-                  href="/consultation" 
+                  href="https://wa.me/919759044199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F" 
                   className="block bg-[#C84F1A] hover:from-orange-600 hover:to-orange-700 text-white text-center px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg transform hover:scale-[1.02]"
                   onClick={() => setIsMenuOpen(false)}
                 >

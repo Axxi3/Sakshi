@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
+import Link from 'next/link';
 
 interface FAQ {
   id: number;
@@ -11,29 +12,49 @@ interface FAQ {
   answer: string;
 }
 
+
 const faqData: FAQ[] = [
   {
     id: 1,
-    question: "Why do I need to use a Design System?",
-    answer: "A Design System is a super useful tool for designers. It helps keep designs consistent and makes the design process faster. You can use pre-designed stuff over and over, and it's helpful for both new and experienced designers. In short, a Design System is like a designer's toolbox for making great-looking and user-friendly designs."
+    question: "What is Ayurveda and how does it work?",
+    answer: "Ayurveda is an ancient Indian system of medicine that focuses on balancing the body, mind, and spirit. Treatments are customized based on your unique body constitution (dosha) and aim to promote holistic wellness and natural healing."
   },
   {
     id: 2,
-    question: "Is there a preview or a free trial available?",
-    answer: "Yes, we offer a 7-day free trial for all new users. You can explore all our Ayurvedic treatments and wellness programs during this period. No credit card required to start your trial."
+    question: "What types of treatments do you offer?",
+    answer: "We offer a wide range of Ayurvedic therapies including Panchakarma, Abhyanga, Shirodhara, Nasya, Udvartana, Marma therapy, leech therapy, and other specialized treatments for detoxification, pain relief, and rejuvenation."
   },
   {
     id: 3,
-    question: "How many components are available?",
-    answer: "We offer over 15 different Ayurvedic treatments and wellness programs, including Panchakarma, Abhyanga, Shirodhara, Nasya, Udvartana, Marma therapy, and various specialized detox programs."
+    question: "Do I need a consultation before starting treatment?",
+    answer: "Yes, an initial consultation with our Ayurvedic practitioner is recommended. This helps assess your dosha, current health condition, and determines the most suitable treatments for you."
   },
   {
     id: 4,
-    question: "Are there a sector-specific dashboards and widgets available?",
-    answer: "Yes, we provide personalized wellness dashboards for each client where you can track your treatment progress, upcoming appointments, dietary recommendations, and wellness goals all in one place."
+    question: "How long are the treatments and how often should I visit?",
+    answer: "Treatment duration varies from 20 minutes to 1 hour depending on the therapy. Frequency depends on your health goals and the practitioner’s recommendations."
+  },
+  {
+    id: 5,
+    question: "Are the treatments safe?",
+    answer: "Yes, all treatments are conducted by trained Ayurvedic practitioners using natural herbs, oils, and traditional methods. We ensure hygiene and safety protocols are strictly followed."
+  },
+  {
+    id: 6,
+    question: "Can Ayurveda help with chronic health issues?",
+    answer: "Ayurvedic therapies can support management of chronic conditions such as joint pain, skin disorders, digestive issues, stress, and hormonal imbalances. Personalized treatment plans provide long-term benefits."
+  },
+  {
+    id: 7,
+    question: "Do you offer diet and lifestyle guidance?",
+    answer: "Yes, along with treatments, we provide personalized dietary recommendations, daily routines, and lifestyle guidance to help maintain balance and optimize health."
+  },
+  {
+    id: 8,
+    question: "How do I book a session?",
+    answer: "You can book a session by contacting us via phone, WhatsApp, or through our online booking form. We also offer WhatsApp links with pre-filled messages for quick inquiries."
   }
 ];
-
 const FAQSection: React.FC = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(1); // First FAQ open by default
 
@@ -128,13 +149,12 @@ const FAQSection: React.FC = () => {
             <p className="text-[#6b6b6b] text-sm md:text-base mb-6">
               Our wellness experts are here to help you on your Ayurvedic journey.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <Link
+              href={"https://wa.me/919759044199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F"}
               className="bg-[#8b8680] hover:bg-[#7a7570] text-white px-8 py-3 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Contact Support
-            </motion.button>
+            </Link>
           </div>
         </div>
       </div>

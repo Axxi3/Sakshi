@@ -1,9 +1,12 @@
+'use client';
+
 import type { Metadata } from "next";
 import { Figtree, Philosopher } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "./component/Footer";
 import FAQSection from "./component/Home/FAQ";
+import { usePathname } from "next/navigation";
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -17,25 +20,23 @@ const philosopher = Philosopher({
   weight: ["400", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "AyurVeda Wellness Center",
-  description: "Experience Holistic Healing and Serenity with Ayurveda",
-};
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const isAdminRoute = pathname?.startsWith("/admin");
+
   return (
     <html lang="en">
       <body
         className={`${figtree.variable} font-figtree ${philosopher.variable} antialiased`}
       >
-        <Navbar />
+        {!isAdminRoute && <Navbar />}
         {children}
-        <FAQSection/>
-        <Footer/>
+        {!isAdminRoute && <FAQSection />}
+        {!isAdminRoute && <Footer />}
       </body>
     </html>
   );

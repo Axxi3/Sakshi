@@ -169,56 +169,68 @@ const treatmentsData: Treatment[] = [
 
 
 // Regular Treatment Card
-const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: number }) => (
-  <motion.div
-    initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.6, delay: index * 0.1 }}
-    className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group border border-white/50 hover:bg-white/80"
-  >
-    <div className="flex flex-col md:flex-row gap-6">
-      <div className="md:w-1/3">
-        <div className="relative h-32 md:h-full min-h-[150px] overflow-hidden rounded-xl">
-          <img
-            src={treatment.image}
-            alt={treatment.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-      </div>
-      <div className="md:w-2/3 space-y-4">
-        <div className="flex items-start justify-between">
-          <h3 className="font-philosopher text-xl font-semibold text-[#2d3020]">{treatment.title}</h3>
-          
-        </div>
-        <p className="text-[#6b6b6b] text-sm leading-relaxed">{treatment.shortDescription}</p>
-        <div className="flex flex-wrap gap-2">
-          {treatment.benefits.slice(0, 3).map((benefit, idx) => (
-            <span
-              key={idx}
-              className="bg-[#8b8680]/10 text-[#8b8680] text-xs px-3 py-1 rounded-full"
-            >
-              {benefit}
-            </span>
-          ))}
-        </div>
-        <div className="flex items-center justify-between pt-2">
-          <div className="flex items-center space-x-1 text-xs text-[#8b8680]">
-            <Clock className="w-4 h-4" />
-            <span>{treatment.duration}</span>
+const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: number }) => {
+  // WhatsApp number
+  const whatsappNumber = "919759044199"; // country code + number
+  const message = `Hey, I want to know more about ${treatment.title}`;
+
+  // Encode message for URL
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group border border-white/50 hover:bg-white/80"
+    >
+      <div className="flex flex-col md:flex-row gap-6">
+        <div className="md:w-1/3">
+          <div className="relative h-32 md:h-full min-h-[150px] overflow-hidden rounded-xl">
+            <img
+              src={treatment.image}
+              alt={treatment.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
-          <Link
-            href={`/treatments/${treatment.id}`}
-            className="group/link inline-flex items-center space-x-2 text-[#8b8680] hover:text-[#2d3020] font-medium text-sm transition-all duration-300"
-          >
-            <span>Learn More</span>
-            <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" />
-          </Link>
+        </div>
+        <div className="md:w-2/3 space-y-4">
+          <div className="flex items-start justify-between">
+            <h3 className="font-philosopher text-xl font-semibold text-[#2d3020]">{treatment.title}</h3>
+          </div>
+          <p className="text-[#6b6b6b] text-sm leading-relaxed">{treatment.shortDescription}</p>
+          <div className="flex flex-wrap gap-2">
+            {treatment.benefits.slice(0, 3).map((benefit, idx) => (
+              <span
+                key={idx}
+                className="bg-[#8b8680]/10 text-[#8b8680] text-xs px-3 py-1 rounded-full"
+              >
+                {benefit}
+              </span>
+            ))}
+          </div>
+          <div className="flex items-center justify-between pt-2">
+            <div className="flex items-center space-x-1 text-xs text-[#8b8680]">
+              <Clock className="w-4 h-4" />
+              <span>{treatment.duration}</span>
+            </div>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/link inline-flex items-center space-x-2 text-[#8b8680] hover:text-[#2d3020] font-medium text-sm transition-all duration-300"
+            >
+              <span>Learn More</span>
+              <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </motion.div>
-);
+    </motion.div>
+  );
+};
+
 
 const TreatmentsPage: React.FC = () => {
   return (
