@@ -171,7 +171,7 @@ const treatmentsData: Treatment[] = [
 // Regular Treatment Card
 const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: number }) => {
   // WhatsApp number
-  const whatsappNumber = "919759044199"; // country code + number
+  const whatsappNumber = "917454058199"; // country code + number
   const message = `Hey, I want to know more about ${treatment.title}`;
 
   // Encode message for URL

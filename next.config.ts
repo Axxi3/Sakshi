@@ -8,9 +8,9 @@ module.exports = {
       },
       {
         protocol: 'https',
-        hostname: 'drive.google.com',
+        hostname: 'ik.imagekit.io',
         port: '',
-        pathname: '/uc**',
+        pathname: '/**', // Fix: Changed from '/uc**' to '/**'
       },
     ],
   },

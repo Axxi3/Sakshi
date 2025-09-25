@@ -150,7 +150,7 @@ const FAQSection: React.FC = () => {
               Our wellness experts are here to help you on your Ayurvedic journey.
             </p>
             <Link
-              href={"https://wa.me/919759044199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F"}
+              href={"https://wa.me/917454058199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F"}
               className="bg-[#8b8680] hover:bg-[#7a7570] text-white px-8 py-3 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Contact Support

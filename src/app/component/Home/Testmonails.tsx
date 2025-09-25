@@ -17,56 +17,200 @@ interface Testimonial {
 const testimonialsData: Testimonial[] = [
     {
         id: 1,
-        name: "Priya Sharma",
+        name: "Archi Gaur",
         rating: 5.0,
-        text: "The Panchakarma treatment at Wivana completely transformed my health. I feel rejuvenated and balanced. The therapists are highly skilled and caring.",
-        avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=150&h=150&fit=crop&crop=face",
-        location: "Mumbai"
+        text: "I am taking online consultation from this Ayurvedic clinic. The doctor is very kind, listens patiently, and gives effective advice. I'm feeling better and truly appreciate the care.",
+        avatar: "AG",
+        location: "Dehradun"
     },
     {
         id: 2,
-        name: "Rajesh Patel",
-        rating: 4.9,
-        text: "Shirodhara therapy here is exceptional. It helped me overcome chronic stress and insomnia. The peaceful environment adds to the healing experience.",
-        avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-        location: "Delhi"
+        name: "Vansh Singhal",
+        rating: 5.0,
+        text: "Great clinic with helpful staff and effective treatments. The doctor listens carefully and provides personalized advice. Highly recommend for anyone looking for genuine Ayurvedic care.",
+        avatar: "VS",
+        location: "Dehradun"
     },
     {
         id: 3,
-        name: "Meera Gupta",
+        name: "Shreya Pastey",
         rating: 5.0,
-        text: "My Abhyanga massage sessions have been incredible. The personalized approach and authentic Ayurvedic techniques make all the difference.",
-        avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-        location: "Bangalore"
+        text: "One of the best Ayurvedic doctors in Dehradun. I visited Vaidya Sakshi Mittal for my Sinus issue and started feeling better in just 3 days. She is very kind and takes good care of each patient.",
+        avatar: "SP",
+        location: "Dehradun"
     },
     {
         id: 4,
-        name: "Dr. Anand Kumar",
-        rating: 4.8,
-        text: "As a physician, I appreciate the scientific approach combined with traditional Ayurveda. The consultation process is thorough and professional.",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-        location: "Chennai"
+        name: "Urmi Saini",
+        rating: 5.0,
+        text: "I take my mother's diabetes treatment from Shree Samadhan Ayurveda clinic. Best Ayurvedic doctor in Dehradun.",
+        avatar: "US",
+        location: "Dehradun"
     },
     {
         id: 5,
-        name: "Kavya Menon",
+        name: "Shivam",
         rating: 5.0,
-        text: "The detox program helped me lose weight naturally and improved my digestion significantly. Highly recommend their holistic approach.",
-        avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
-        location: "Kerala"
+        text: "I visited for my PCOD issue and it's cured now. I must say she is the best doctor. She treats by Nadi Parikshan.",
+        avatar: "SH",
+        location: "Dehradun"
     },
     {
         id: 6,
-        name: "Amit Singh",
-        rating: 4.9,
-        text: "Excellent Marma therapy sessions. The therapists understand pressure points perfectly. My joint pain has reduced considerably.",
-        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-        location: "Pune"
-    }
+        name: "Priyanjali Upadhyay",
+        rating: 5.0,
+        text: "A true sample of excellent hospitality and Ayurveda Science! Vaidya Sakshi Mittal provides authentic Ayurvedic treatment and medicines.",
+        avatar: "PU",
+        location: "Dehradun"
+    },
+    {
+        id: 7,
+        name: "Susheel Gupta",
+        rating: 5.0,
+        text: "Best Ayurvedic clinic in Dehradun. I visit clinic for my treatment and go through Jaloka therapy. She treats patients through Nadi Pariksha.",
+        avatar: "SG",
+        location: "Dehradun"
+    },
+    {
+        id: 8,
+        name: "Arnav Arora",
+        rating: 5.0,
+        text: "Best Ayurveda treatment I found in Dehradun.",
+        avatar: "AA",
+        location: "Dehradun"
+    },
+    {
+        id: 9,
+        name: "Arti Arora",
+        rating: 5.0,
+        text: "Best Ayurveda treatment for diabetes in Dehradun.",
+        avatar: "AA",
+        location: "Dehradun"
+    },
+    {
+        id: 10,
+        name: "Aastha Arora",
+        rating: 5.0,
+        text: "Best Ayurveda treatment for infertility in Dehradun.",
+        avatar: "AA",
+        location: "Dehradun"
+    },
+    {
+        id: 11,
+        name: "Dr Akanksha Naudiyal",
+        rating: 5.0,
+        text: "Best Ayurvedic clinic in Dehradun. Best treatment.",
+        avatar: "DA",
+        location: "Dehradun"
+    },
+    {
+        id: 12,
+        name: "Parnika Sethi",
+        rating: 5.0,
+        text: "Best Ayurvedic treatment in Dehradun.",
+        avatar: "PS",
+        location: "Dehradun"
+    },
+    {
+        id: 13,
+        name: "Pratima Vishwakarma",
+        rating: 5.0,
+        text: "Best Ayurvedic doctor for gyne related problems.",
+        avatar: "PV",
+        location: "Dehradun"
+    },
+    {
+        id: 14,
+        name: "Mayur Lama",
+        rating: 5.0,
+        text: "Best Ayurveda treatment.",
+        avatar: "ML",
+        location: "Dehradun"
+    },
+    {
+        id: 15,
+        name: "चौ० लक्ष्य",
+        rating: 5.0,
+        text: "Best and effective treatment of Ayurveda.",
+        avatar: "चल",
+        location: "Dehradun"
+    },
+    {
+        id: 16,
+        name: "Shikha Sethi",
+        rating: 5.0,
+        text: "Best Ayurveda treatment for diabetes in Dehradun.",
+        avatar: "SS",
+        location: "Dehradun"
+    },
+    {
+        id: 17,
+        name: "Rakshita Singh",
+        rating: 5.0,
+        text: "Best Ayurvedic doctor in Dehradun.",
+        avatar: "RS",
+        location: "Dehradun"
+    },
+    {
+        id: 18,
+        name: "Pankaj Arora",
+        rating: 5.0,
+        text: "Best Ayurvedic treatment for diabetes.",
+        avatar: "PA",
+        location: "Dehradun"
+    },
+    {
+        id: 19,
+        name: "Robin Chauhan",
+        rating: 5.0,
+        text: "I found best Ayurvedic treatment here.",
+        avatar: "RC",
+        location: "Dehradun"
+    },
+    {
+        id: 20,
+        name: "Narendra Duggal",
+        rating: 5.0,
+        text: "I found the best treatment of diabetes.",
+        avatar: "ND",
+        location: "Dehradun"
+    },
+    {
+        id: 21,
+        name: "Megha Mittal",
+        rating: 5.0,
+        text: "Diagnosis is very accurate and treatment is very effective.",
+        avatar: "MM",
+        location: "Dehradun"
+    },
+    {
+        id: 22,
+        name: "Nikita Singh",
+        rating: 5.0,
+        text: "Great experience. Satisfactory treatments.",
+        avatar: "NS",
+        location: "Dehradun"
+    },
+    {
+        id: 23,
+        name: "Vickey Malik",
+        rating: 5.0,
+        text: "Best Ayurvedic clinic of Dehradun.",
+        avatar: "VM",
+        location: "Dehradun"
+    },
 ];
 
-const column1 = testimonialsData.slice(0, 3);
-const column2 = testimonialsData.slice(3, 6);
+// Split testimonials into columns for desktop layout
+const getColumnTestimonials = (columnIndex: number, totalColumns: number) => {
+    const perColumn = Math.ceil(testimonialsData.length / totalColumns);
+    const start = columnIndex * perColumn;
+    const end = start + perColumn;
+    return testimonialsData.slice(start, end);
+};
+
+const column1 = getColumnTestimonials(0, 2);
+const column2 = getColumnTestimonials(1, 2);
 
 const infiniteAllTestimonials = [...testimonialsData, ...testimonialsData, ...testimonialsData];
 const infiniteColumn1 = [...column1, ...column1, ...column1];
@@ -107,7 +251,7 @@ const TestimonialSection: React.FC = () => {
                     <motion.div
                         animate={{ y: [0, -50 * infiniteAllTestimonials.length] }}
                         transition={{
-                            duration: 25,
+                            duration: 60,
                             repeat: Infinity,
                             ease: "linear"
                         }}
@@ -130,7 +274,7 @@ const TestimonialSection: React.FC = () => {
                         <motion.div
                             animate={{ y: [0, -50 * infiniteColumn1.length] }}
                             transition={{
-                                duration: 20,
+                                duration: 40,
                                 repeat: Infinity,
                                 ease: "linear"
                             }}
@@ -147,7 +291,7 @@ const TestimonialSection: React.FC = () => {
                         <motion.div
                             animate={{ y: [-50 * infiniteColumn2.length, 0] }}
                             transition={{
-                                duration: 20,
+                                duration: 40,
                                 repeat: Infinity,
                                 ease: "linear"
                             }}
@@ -198,21 +342,10 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
 
             {/* Author */}
             <div className="flex items-center space-x-3">
-                <div className="relative">
-                    <img
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover"
-                        onError={(e) => {
-                            const target = e.target as HTMLImageElement;
-                            target.style.display = 'none';
-                            const fallback = target.nextElementSibling as HTMLElement;
-                            if (fallback) fallback.style.display = 'flex';
-                        }}
-                    />
-                    <div className="w-9 h-9 md:w-10 md:h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-full items-center justify-center hidden">
-                        <User className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                    </div>
+                <div className="w-9 h-9 md:w-10 md:h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-semibold text-xs md:text-sm">
+                        {testimonial.avatar}
+                    </span>
                 </div>
                 <div>
                     <h4 className="text-[#2d3020] font-semibold text-sm md:text-base">

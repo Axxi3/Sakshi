@@ -6,24 +6,19 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[90vh] md:min-h-screen flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 opacity-45">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-10"></div>
-        <img 
-          src="/bg.webp"
-          alt="Ayurvedic spa treatment"
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <section 
+      className="relative h-[80vh] md:h-[95dvh] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('1.webp')" }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-10"></div>
 
       {/* Content Container */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 lg:px-8 w-full">
         <div className="max-w-6xl flex flex-col gap-2">
           {/* Trust Badge */}
           <div className="flex flex-wrap items-center space-x-2 mb-6 sm:mb-2">
             <div className="flex items-center space-x-1 bg-white/10 backdrop-blur-md rounded-full px-3 py-1.5 sm:px-4 sm:py-2 border border-white/20">
-              
               <span className="text-white text-xs sm:text-sm font-medium ml-2">
                 Trusted by 3000+ Customers
               </span>
@@ -39,8 +34,8 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-white/60 text-sm sm:text-base md:text-xl mb-6 sm:mb-8 leading-relaxed font-light max-w-2xl">
-            We design digital platforms that move fast, feel great, and actually convert. Whether you&apos;re scaling a 
-            startup or refreshing a brand — we&apos;ve got your back.
+            We design digital platforms that move fast, feel great, and actually convert. 
+            Whether you&apos;re scaling a startup or refreshing a brand — we&apos;ve got your back.
           </p>
 
           {/* CTA Buttons */}

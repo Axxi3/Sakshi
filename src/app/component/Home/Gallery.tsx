@@ -4,6 +4,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface GalleryImage {
   id: number;
@@ -15,39 +16,33 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: "/1.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0051.jpg?updatedAt=1758740507772",
     alt: "Relaxing spa treatment",
     title: "Abhyanga Therapy"
   },
   {
     id: 2,
-    src: "/2.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0033.jpg?updatedAt=1758740513064",
     alt: "Ayurvedic massage session",
     title: "Therapeutic Massage"
   },
   {
     id: 3,
-    src: "/3.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0031.jpg?updatedAt=1758740512492",
     alt: "Ayurvedic herbs and oils",
     title: "Natural Herbs"
   },
   {
     id: 4,
-    src: "/4.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0036.jpg?updatedAt=1758740509924",
     alt: "Meditation and wellness",
     title: "Meditation Space"
   },
   {
     id: 5,
-    src: "/5.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0046.jpg?updatedAt=1758740506270",
     alt: "Wellness treatment room",
     title: "Treatment Room"
-  },
-  {
-    id: 6,
-    src: "/6.webp",
-    alt: "Panchakarma therapy",
-    title: "Panchakarma"
   }
 ];
 
@@ -105,7 +100,7 @@ const GallerySection: React.FC = () => {
         </div>
 
         {/* View More Button */}
-        <div className="text-center mt-4">
+        <Link href="/gallery" className="w-full flex items-center justify-center text-center mt-4">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -113,7 +108,7 @@ const GallerySection: React.FC = () => {
           >
             View More Gallery
           </motion.button>
-        </div>
+        </Link>
       </div>
     </section>
   );

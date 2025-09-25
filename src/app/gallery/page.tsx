@@ -16,15 +16,10 @@ interface GalleryImage {
 }
 
 const galleryData: GalleryImage[] = [
-  // Treatment Rooms
-
-
- 
-
   // Treatments in Action
   {
     id: 5,
-    src: "/t1.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0026.jpg?updatedAt=1758740514384",
     alt: "Ayurvedic massage session",
     title: "Therapeutic Massage",
     category: "treatments",
@@ -32,7 +27,7 @@ const galleryData: GalleryImage[] = [
   },
   {
     id: 6,
-    src: "/t2.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0030.jpg?updatedAt=1758740513913",
     alt: "Herbal steam therapy",
     title: "Steam Therapy",
     category: "treatments",
@@ -40,18 +35,17 @@ const galleryData: GalleryImage[] = [
   },
   {
     id: 7,
-    src: "/t3.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0029.jpg?updatedAt=1758740513837",
     alt: "Oil therapy treatment",
     title: "Oil Therapy Session",
     category: "treatments",
     description: "Specialized oil therapy for deep healing"
   },
- 
 
   // Herbs & Products
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&focus=center",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0033.jpg?updatedAt=1758740513064",
     alt: "Ayurvedic herbs collection",
     title: "Medicinal Herbs",
     category: "herbs-products",
@@ -59,7 +53,7 @@ const galleryData: GalleryImage[] = [
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&h=600&fit=crop",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0039.jpg?updatedAt=1758740513063",
     alt: "Essential oils display",
     title: "Therapeutic Oils",
     category: "herbs-products",
@@ -67,7 +61,7 @@ const galleryData: GalleryImage[] = [
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1605300413442-5c264f0ea0f3?w=800&h=600&fit=crop",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0031.jpg?updatedAt=1758740512492",
     alt: "Herbal preparations",
     title: "Herbal Preparations",
     category: "herbs-products",
@@ -85,23 +79,23 @@ const galleryData: GalleryImage[] = [
   // Facility
   {
     id: 13,
-    src: "/1.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0036.jpg?updatedAt=1758740509924",
     alt: "Reception and waiting area",
-  title: "Doctor",
+    title: "Doctor",
     category: "facility",
     description: "Our Lead doctor"
   },
   {
     id: 14,
-    src: "/2.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0044.jpg?updatedAt=1758740507760",
     alt: "Meditation garden",
-  title: "Doctor",
+    title: "Doctor",
     category: "facility",
     description: "Our Lead doctor"
   },
   {
     id: 15,
-    src: "/3.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0051.jpg?updatedAt=1758740507772",
     alt: "Relaxation lounge",
     title: "Doctor",
     category: "facility",
@@ -109,7 +103,7 @@ const galleryData: GalleryImage[] = [
   },
   {
     id: 16,
-    src: "/5.webp",
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0048.jpg?updatedAt=1758740506283",
     alt: "Yoga and meditation hall",
     title: "Doctor",
     category: "facility",
@@ -117,21 +111,12 @@ const galleryData: GalleryImage[] = [
   }
 ];
 
-const categories = [
-  { id: 'all', label: 'All Images', count: galleryData.length },
-  { id: 'treatments', label: 'Treatments', count: galleryData.filter(img => img.category === 'treatments').length },
-  { id: 'herbs-products', label: 'Herbs & Products', count: galleryData.filter(img => img.category === 'herbs-products').length },
-  { id: 'facility', label: 'Our Facility', count: galleryData.filter(img => img.category === 'facility').length }
-];
-
 const GalleryPage: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const filteredImages = activeCategory === 'all' 
-    ? galleryData 
-    : galleryData.filter(img => img.category === activeCategory);
+  // Show all images since we removed filtering
+  const filteredImages = galleryData;
 
   const openLightbox = (image: GalleryImage) => {
     setSelectedImage(image);
@@ -167,9 +152,7 @@ const GalleryPage: React.FC = () => {
       />
 
       {/* Gallery Content */}
-      <section 
-      
-      className="py-20 bg-[#FDF8F3]">
+      <section className="py-20 bg-[#FDF8F3]">
         <div className="max-w-7xl mx-auto px-6">
           {/* Introduction */}
           <div className="text-center mb-16 max-w-4xl mx-auto">
@@ -182,27 +165,7 @@ const GalleryPage: React.FC = () => {
             </p>
           </div>
 
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <motion.button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeCategory === category.id
-                    ? 'bg-[#87241A] text-white shadow-lg'
-                    : 'bg-white/60 text-[#6b6b6b] hover:bg-white/80 border border-white/50'
-                }`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span>{category.label}</span>
-                <span className="ml-2 text-sm opacity-75">({category.count})</span>
-              </motion.button>
-            ))}
-          </div>
-
-          {/* Image Grid */}
+          {/* Image Grid - No Category Filter */}
           <motion.div 
             layout
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
@@ -264,7 +227,7 @@ const GalleryPage: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a 
-                  href="https://wa.me/919759044199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F"
+                  href="https://wa.me/917454058199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#8b8680] hover:bg-[#7a7570] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 shadow-lg"

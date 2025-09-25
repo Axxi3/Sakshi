@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Leaf } from 'lucide-react';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,15 +33,18 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Enhanced Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-orange-500/25 transition-all duration-300">
-                <Leaf className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-[#4a4a3f] animate-pulse"></div>
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-white font-bold text-lg tracking-wide">AyurVeda</span>
-              <div className="text-orange-200 text-xs -mt-1 font-light">Wellness Center</div>
+             <div className="relative">
+    <div className="w-15 h-15 p-2 group-hover:shadow-orange-500/25 transition-all duration-300 group-hover:scale-105">
+      <Image
+        src="/logo.avif" // Place your logo in /public/logo.png
+        alt="Shree Samadhan Ayurveda"
+        width={40}
+        height={40}
+        className="w-full h-full object-cover"
+        priority
+      />
+    </div>
+              
             </div>
           </Link>
 
@@ -64,7 +68,7 @@ const Navbar = () => {
           {/* Enhanced CTA Button */}
           <div className="hidden md:block">
             <Link 
-              href="https://wa.me/919759044199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F" 
+              href="https://wa.me/917454058199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F" 
               className="relative bg-[#C84F1A]  text-white px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/30 overflow-hidden group"
             >
               <span className="relative z-10">Book Consultation</span>
@@ -98,7 +102,7 @@ const Navbar = () => {
               
               <div className="px-6 pt-6">
                 <Link 
-                  href="https://wa.me/919759044199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F" 
+                  href="https://wa.me/917454058199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F" 
                   className="block bg-[#C84F1A] hover:from-orange-600 hover:to-orange-700 text-white text-center px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg transform hover:scale-[1.02]"
                   onClick={() => setIsMenuOpen(false)}
                 >

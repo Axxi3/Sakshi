@@ -13,7 +13,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   // WhatsApp business number (replace with your actual WhatsApp business number)
-  const WHATSAPP_NUMBER = "+919759044199"; // Replace with your WhatsApp number (without + or special characters)
+  const WHATSAPP_NUMBER = "+917454058199"; // Replace with your WhatsApp number (without + or special characters)
 
   const handleEnquire = () => {
     // Create the pre-filled message
@@ -77,14 +77,6 @@ export default function ProductCard({ product }: ProductCardProps) {
                    shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300
                    hover:scale-110 hover:bg-white"
         >
-          {isWishlisted ? (
-            <HeartSolidIcon className="h-4 w-4 text-red-500" />
-          ) : (
-            <svg className="h-4 w-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-          )}
         </button>
 
         {/* Enquire Now Button */}
@@ -113,35 +105,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </h3>
 
         {/* Rating */}
-        <div className="flex items-center gap-1">
-          <div className="flex">
-            {[...Array(5)].map((_, i) => (
-              <StarIcon
-                key={i}
-                className={`h-4 w-4 ${
-                  i < Math.floor(product.rating) 
-                    ? 'text-gray-900 fill-current' 
-                    : 'text-gray-300'
-                }`}
-              />
-            ))}
-          </div>
-          <span className="text-sm text-gray-600">
-            {product.rating} ({product.reviews} reviews)
-          </span>
-        </div>
-
-        {/* Price */}
-        <div className="flex items-center gap-2 pt-1">
-          <span className="font-semibold text-gray-900">
-            ${product.price}
-          </span>
-          {product.originalPrice && (
-            <span className="text-sm text-gray-400 line-through">
-              ${product.originalPrice}
-            </span>
-          )}
-        </div>
+      
 
         {/* Mobile Enquire Button */}
         <button

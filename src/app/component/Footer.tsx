@@ -4,6 +4,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Leaf, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -16,37 +17,21 @@ const Footer: React.FC = () => {
         {/* Main Footer Content */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="space-y-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">AyurVeda</h3>
-                <p className="text-orange-200 text-sm -mt-1">Wellness Center</p>
-              </div>
+              <Link href="/" className="flex items-center space-x-3 group">
+             <div className="relative">
+    <div className="w-15 h-15 p-2 group-hover:shadow-orange-500/25 transition-all duration-300 group-hover:scale-105">
+      <Image
+        src="/logo.avif" // Place your logo in /public/logo.png
+        alt="Shree Samadhan Ayurveda"
+        width={40}
+        height={40}
+        className="w-full h-full object-cover"
+        priority
+      />
+    </div>
+              
             </div>
-            
-            <p className="text-white/80 leading-relaxed text-sm">
-              Experience authentic Ayurvedic healing and wellness treatments designed to restore balance and promote holistic health through time-tested natural therapies.
-            </p>
-            
-            {/* Social Media */}
-            <div className="flex space-x-4">
-              <Link href="#" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors duration-300">
-                <Facebook className="w-5 h-5" />
-              </Link>
-              <Link href="#" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors duration-300">
-                <Instagram className="w-5 h-5" />
-              </Link>
-              <Link href="#" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors duration-300">
-                <Twitter className="w-5 h-5" />
-              </Link>
-              <Link href="#" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors duration-300">
-                <Youtube className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
+          </Link>
 
           {/* Quick Links */}
           <div>
@@ -163,29 +148,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
-        <div className="border-t border-white/20 py-12">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h4 className="text-2xl font-philosopher font-semibold mb-4">
-                Subscribe to Our Newsletter
-              </h4>
-              <p className="text-white/80 text-sm">
-                Stay updated with the latest wellness tips, treatment offers, and Ayurvedic wisdom.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-orange-400 focus:bg-white/15 transition-all duration-300"
-              />
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium transition-colors duration-300 whitespace-nowrap">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
+      
 
         {/* Bottom Footer */}
         <div className="border-t border-white/20 py-8">
