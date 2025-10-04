@@ -67,14 +67,7 @@ const galleryData: GalleryImage[] = [
     category: "herbs-products",
     description: "Freshly prepared herbal medicines and supplements"
   },
-  {
-    id: 12,
-    src: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800&h=600&fit=crop",
-    alt: "Ayurvedic skincare products",
-    title: "Natural Skincare",
-    category: "herbs-products",
-    description: "Organic skincare products made with Ayurvedic ingredients"
-  },
+
 
   // Facility
   {
@@ -104,6 +97,71 @@ const galleryData: GalleryImage[] = [
   {
     id: 16,
     src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0048.jpg?updatedAt=1758740506283",
+    alt: "Yoga and meditation hall",
+    title: "Doctor",
+    category: "facility",
+    description: "Our Lead doctor"
+  },
+    {
+    id: 17,
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0028.jpg?updatedAt=1758740514954",
+    alt: "Yoga and meditation hall",
+    title: "Doctor",
+    category: "facility",
+    description: "Our Lead doctor"
+  },
+    {
+    id: 18,
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0037.jpg?updatedAt=1758740510526",
+    alt: "Yoga and meditation hall",
+    title: "Doctor",
+    category: "facility",
+    description: "Our Lead doctor"
+  },
+    {
+    id: 19,
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0046.jpg?updatedAt=1758740506270",
+    alt: "Yoga and meditation hall",
+    title: "Doctor",
+    category: "facility",
+    description: "Our Lead doctor"
+  },
+    {
+    id: 20,
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0040.jpg?updatedAt=1758740508336",
+    alt: "Yoga and meditation hall",
+    title: "Doctor",
+    category: "facility",
+    description: "Our Lead doctor"
+  },
+    {
+    id: 16,
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0044.jpg?updatedAt=1758740507760",
+    alt: "Yoga and meditation hall",
+    title: "Doctor",
+    category: "facility",
+    description: "Our Lead doctor"
+  },
+    {
+    id: 16,
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0049.jpg?updatedAt=1758740507812",
+    alt: "Yoga and meditation hall",
+    title: "Doctor",
+    category: "facility",
+    description: "Our Lead doctor"
+  },
+    {
+    id: 16,
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0048.jpg?updatedAt=1758740506283",
+    alt: "Yoga and meditation hall",
+    title: "Doctor",
+    category: "facility",
+    description: "Our Lead doctor"
+  },
+ 
+    {
+    id: 16,
+    src: "https://ik.imagekit.io/oa7uh5z0ty/IMG-20250922-WA0041.jpg?updatedAt=1758740509735",
     alt: "Yoga and meditation hall",
     title: "Doctor",
     category: "facility",

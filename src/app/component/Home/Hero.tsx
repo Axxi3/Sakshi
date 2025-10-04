@@ -7,8 +7,8 @@ import { ArrowRight } from 'lucide-react';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[80vh] md:h-[95dvh] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('1.webp')" }}
+      className="relative h-[80vh] md:h-[95dvh] flex items-center overflow-hidden bg-cover bg-center  bg-no-repeat"
+      style={{ backgroundImage: "url('cover.png')" }}
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-10"></div>
@@ -28,14 +28,13 @@ const HeroSection = () => {
           {/* Main Heading */}
           <h1 className="font-philosopher text-3xl sm:text-4xl md:text-6xl lg:text-[50px] font-semibold text-white mb-4 sm:mb-6 leading-tight">
             Experience Holistic{' '}
-            <span className="text-orange-400">Healing and Serenity</span>{' '}
-            with Ayurveda at Wivana
+            <span className="text-orange-400">Healing and Serenity</span>{' '} <br/>
+            at Shree Samadhan Ayurveda
           </h1>
 
           {/* Subtitle */}
           <p className="text-white/60 text-sm sm:text-base md:text-xl mb-6 sm:mb-8 leading-relaxed font-light max-w-2xl">
-            We design digital platforms that move fast, feel great, and actually convert. 
-            Whether you&apos;re scaling a startup or refreshing a brand — we&apos;ve got your back.
+           Embrace the Power of Authentic Ayurvedic Healing Personalized Treatment Plans Rooted in Ancient Wisdom for Your Complete Well-being.
           </p>
 
           {/* CTA Buttons */}

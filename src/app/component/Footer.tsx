@@ -3,7 +3,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Leaf, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 const Footer: React.FC = () => {
@@ -17,21 +17,26 @@ const Footer: React.FC = () => {
         {/* Main Footer Content */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-              <Link href="/" className="flex items-center space-x-3 group">
-             <div className="relative">
-    <div className="w-15 h-15 p-2 group-hover:shadow-orange-500/25 transition-all duration-300 group-hover:scale-105">
-      <Image
-        src="/logo.avif" // Place your logo in /public/logo.png
-        alt="Shree Samadhan Ayurveda"
-        width={40}
-        height={40}
-        className="w-full h-full object-cover"
-        priority
-      />
-    </div>
-              
-            </div>
-          </Link>
+          <div>
+            <Link href="/" className="flex items-center space-x-3 group mb-6">
+              <div className="relative">
+                <div className="w-15 h-15 p-2 group-hover:shadow-orange-500/25 transition-all duration-300 group-hover:scale-105">
+                  <Image
+                    src="/logo.avif"
+                    alt="Shree Samadhan Ayurveda"
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            </Link>
+            <h3 className="text-lg font-semibold mb-3 font-philosopher">Shree Samadhan Hospital Of Ayurveda</h3>
+            <p className="text-white/80 text-sm leading-relaxed">
+              Traditional Ayurvedic healing for modern wellness needs
+            </p>
+          </div>
 
           {/* Quick Links */}
           <div>
@@ -109,31 +114,44 @@ const Footer: React.FC = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 font-philosopher">Contact Info</h4>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                <div>
+            <h4 className="text-lg font-semibold mb-6 font-philosopher">Our Locations</h4>
+            <div className="space-y-6">
+              {/* Main Branch */}
+              <div>
+                <h5 className="text-white font-semibold mb-3 text-sm">Main Branch - Dehradun</h5>
+                <div className="flex items-start space-x-3">
+                  <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <p className="text-white/80 text-sm leading-relaxed">
-                    123 Wellness Street,<br />
-                    Ayurveda District,<br />
-                    Mumbai, Maharashtra 400001
+                    Vansh Tower, 1st Floor, 3 EC Road,<br />
+                    Next to Udupi Cafe and Restaurant,<br />
+                    Dehradun, Uttarakhand
                   </p>
+                </div>
+              </div>
+
+              {/* Rishikesh Branch */}
+              <div>
+                <h5 className="text-white font-semibold mb-3 text-sm">Rishikesh Branch</h5>
+                <div className="flex items-start space-x-3">
+                  <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-white/80 text-sm leading-relaxed">
+                      Avlokan Clinic<br />
+                      58, Railway Road, Ambedkar Chowk,<br />
+                      Next to Burger Singh, Near Neeraj Bhawan,<br />
+                      Rishikesh
+                    </p>
+                  </div>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-orange-400 flex-shrink-0" />
                 <div>
-                  <p className="text-white/80 text-sm">+91 98765 43210</p>
-                  <p className="text-white/80 text-sm">+91 98765 43211</p>
+                  <p className="text-white/80 text-sm">+91 74540 58199</p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                <p className="text-white/80 text-sm">info@ayurvedawellness.com</p>
-              </div>
             </div>
 
             {/* Working Hours */}
@@ -148,13 +166,11 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-      
-
         {/* Bottom Footer */}
         <div className="border-t border-white/20 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-white/60 text-sm">
-              © 2024 AyurVeda Wellness Center. All rights reserved.
+              © 2024 Shree Samadhan Hospital Of Ayurveda. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link href="/privacy" className="text-white/60 hover:text-orange-400 text-sm transition-colors duration-200">

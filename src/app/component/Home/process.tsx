@@ -12,30 +12,32 @@ interface ProcessStep {
 
 const processSteps: ProcessStep[] = [
   {
-    id: "01",
-    number: "01",
-    title: "Initial Consultant",
-    description: "Your journey begins with a personalized consultation where we assess your health"
+    "id": "01",
+    "number": "01",
+    "title": "Appointment & History",
+    "description": "Booking the appointment, conducting Nadi Parikshan, and detailed history taking."
   },
   {
-    id: "02", 
-    number: "02",
-    title: "Customized Plan",
-    description: "Based on your dosha (body constitution) and consultation, we create a tailored plan"
+    "id": "02",
+    "number": "02",
+    "title": "Diagnosis & Counseling",
+    "description": "Ayurvedic diagnosis followed by counseling to understand the root cause and treatment approach."
   },
   {
-    id: "03",
-    number: "03", 
-    title: "Therapeutic Sessions",
-    description: "Experience our diverse range of treatments, detox therapies, and wellness"
+    "id": "03",
+    "number": "03",
+    "title": "Treatment & Lifestyle",
+    "description": "Providing Ayurvedic treatment along with personalized diet and lifestyle modifications."
   },
   {
-    id: "04",
-    number: "04",
-    title: "Ongoing Support", 
-    description: "We provide continuous guidance and support throughout your wellness"
+    "id": "04",
+    "number": "04",
+    "title": "Follow-up & Support",
+    "description": "Ongoing guidance through follow-up consultations to ensure sustained wellness."
   }
-];
+]
+
+
 
 const ProcessSection = () => {
   return (

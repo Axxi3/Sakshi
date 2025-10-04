@@ -27,7 +27,7 @@ const AboutSection = () => {
 
             {/* Description */}
             <p className="text-[#101010]/60 text-sm sm:text-base leading-relaxed max-w-lg">
-              Ayurveda is not just my profession, it’s the way I live my life. Through my practice, I aim to make health simple, natural, and approachable for everyone. I specialize in Nadi Parikshan and lifestyle-based healing, guiding people to find balance in both body and mind. My focus is on the root cause of health concerns, not just temporary relief. I especially enjoy working with young people and families, helping them discover how small daily practices, mindful eating, and Ayurveda’s timeless wisdom can bring long-term wellness and happiness.
+             Ayurveda isn&apos;t only my job, it&apos;s my lifestyle. I try to make health easy, natural, and accessible to all through my practice. I am specialized in Nadi Parikshan and lifestyle healing, helping individuals to balance their body and mind. My work is based on the core cause of health issues, not temporary solutions. I particularly love to work with youth and families and assist them in finding out how small everyday habits, thoughtful eating, and Ayurveda&apos;s eternal principles can lead to long-lasting health and contentment.
             </p>
 
          
