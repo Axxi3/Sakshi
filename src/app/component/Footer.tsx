@@ -80,32 +80,32 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-6 font-philosopher">Our Treatments</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/treatments/panchakarma" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Panchakarma
                 </Link>
               </li>
               <li>
-                <Link href="/treatments/abhyanga" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Abhyanga Massage
                 </Link>
               </li>
               <li>
-                <Link href="/treatments/shirodhara" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Shirodhara Therapy
                 </Link>
               </li>
               <li>
-                <Link href="/treatments/nasya" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Nasya Treatment
                 </Link>
               </li>
               <li>
-                <Link href="/treatments/udvartana" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Udvartana
                 </Link>
               </li>
               <li>
-                <Link href="/treatments/marma" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Marma Therapy
                 </Link>
               </li>
@@ -158,9 +158,7 @@ const Footer: React.FC = () => {
             <div className="mt-8">
               <h5 className="text-white font-semibold mb-3 text-sm">Working Hours</h5>
               <div className="text-white/80 text-sm space-y-1">
-                <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
-                <p>Saturday: 9:00 AM - 6:00 PM</p>
-                <p>Sunday: 10:00 AM - 4:00 PM</p>
+                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
               </div>
             </div>
           </div>

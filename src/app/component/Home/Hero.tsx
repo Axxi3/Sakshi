@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section 
       className="relative h-[80vh] md:h-[95dvh] flex items-center overflow-hidden bg-cover bg-center  bg-no-repeat"
-      style={{ backgroundImage: "url('cover.png')" }}
+      style={{ backgroundImage: "url('cover2.jpg')" }}
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-10"></div>
@@ -40,7 +40,7 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
             <Link 
-              href="https://wa.link/lgkhyt" 
+              href="https://api.whatsapp.com/send/?phone=917454058199&text=Hey%2C+I+want+to+visit+you.+When+are+you+free+to+attend+me%3F&type=phone_number&app_absent=0" 
               className="group bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 
                         text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-semibold transition-all duration-300 
                         transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2 w-full sm:w-fit"
@@ -50,7 +50,7 @@ const HeroSection = () => {
             </Link>
             
             <Link 
-              href="/learn-more" 
+              href="https://api.whatsapp.com/send/?phone=917454058199&text=Hey%2C+I+want+to+visit+you.+When+are+you+free+to+attend+me%3F&type=phone_number&app_absent=0" 
               className="bg-transparent hover:bg-white/10 text-white border border-white/50 hover:border-white 
                         px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-semibold transition-all duration-300 
                         w-full sm:w-fit text-center"

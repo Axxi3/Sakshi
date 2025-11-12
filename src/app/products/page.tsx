@@ -24,7 +24,7 @@ const mockProducts: Product[] = [
     name: "Keshamrit Hair Oil",
     price: 120,
     originalPrice: 200,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/2.jpg?updatedAt=1758807322131", // Three hair oil bottles
+    image: "https://ik.imagekit.io/oa7uh5z0ty/4%20-%20Copy.jpg?updatedAt=1758807321917", // Three hair oil bottles
     category: "Hair Care",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.5,
@@ -36,7 +36,7 @@ const mockProducts: Product[] = [
     name: "Suvarnaprashana Avaleha",
     price: 89,
     originalPrice: 150,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/3%20-%20Copy.jpg?updatedAt=1758807321679", // Three small jars with Sanskrit labels
+    image: "https://ik.imagekit.io/oa7uh5z0ty/2.jpg?updatedAt=1758807322131", // Three small jars with Sanskrit labels
     category: "Ayurvedic Medicine",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.2,
@@ -48,7 +48,7 @@ const mockProducts: Product[] = [
     name: "VaricoVeda Oil",
     price: 95,
     originalPrice: 160,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/4%20-%20Copy.jpg?updatedAt=1758807321917", // White spray bottle with Samviran branding
+    image: "https://ik.imagekit.io/oa7uh5z0ty/7.jpg?updatedAt=1758807321661", // White spray bottle with Samviran branding
     category: "Therapeutic Oil",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.9,
@@ -60,7 +60,7 @@ const mockProducts: Product[] = [
     name: "Kesha Griha Roll On",
     price: 120,
     originalPrice: 200,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/5%20-%20Copy.jpg?updatedAt=1758807321279", // Two golden roll-on bottles
+    image: "https://ik.imagekit.io/oa7uh5z0ty/6.jpg?updatedAt=1758807321397", // Two golden roll-on bottles
     category: "Hair Care",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.8,
@@ -72,7 +72,7 @@ const mockProducts: Product[] = [
     name: "Shat Dhaut Ghrita Elixir",
     price: 89,
     originalPrice: 150,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/6.jpg?updatedAt=1758807321397", // Three small jars with black lids
+    image: "https://ik.imagekit.io/oa7uh5z0ty/3%20-%20Copy.jpg?updatedAt=1758807321679", // Three small jars with black lids
     category: "Ayurvedic Medicine",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.2,
@@ -84,7 +84,7 @@ const mockProducts: Product[] = [
     name: "Vata Kapha Soothing Candies",
     price: 65,
     originalPrice: 110,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/7.jpg?updatedAt=1758807321661", // Brown pouches with candies
+    image: "https://ik.imagekit.io/oa7uh5z0ty/8.jpg?updatedAt=1758807354818", // Brown pouches with candies
     category: "Ayurvedic Supplements",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.6,
@@ -96,7 +96,7 @@ const mockProducts: Product[] = [
     name: "Srot Ashudhara",
     price: 89,
     originalPrice: 150,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/8.jpg?updatedAt=1758807354818", // Single jar with red and white label
+    image: "https://ik.imagekit.io/oa7uh5z0ty/5%20-%20Copy.jpg?updatedAt=1758807321279", // Single jar with red and white label
     category: "Ayurvedic Medicine",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.2,
