@@ -9,6 +9,7 @@ export interface Product {
   rating: number;
   reviews: number;
   inStock: boolean;
+  description: string;
 }
 
 export interface FilterOptions {

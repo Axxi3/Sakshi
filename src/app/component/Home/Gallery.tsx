@@ -134,13 +134,7 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ image }) => {
         />
         
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="absolute bottom-4 left-4 right-4">
-            <h3 className="text-white font-philosopher text-base sm:text-lg font-medium">
-              {image.title}
-            </h3>
-          </div>
-        </div>
+       
         
         {/* Decorative Corner */}
         <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-white/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

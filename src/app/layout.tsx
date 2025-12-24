@@ -38,10 +38,10 @@ export default function RootLayout({
       <body
         className={`${figtree.variable} font-figtree ${philosopher.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <FAQSection/>
-        <Footer/>
+        <FAQSection />
+        <Footer />
       </body>
     </html>
   );

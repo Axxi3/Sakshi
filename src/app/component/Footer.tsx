@@ -3,7 +3,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react';
 import Image from 'next/image';
 
 const Footer: React.FC = () => {
@@ -33,9 +33,41 @@ const Footer: React.FC = () => {
               </div>
             </Link>
             <h3 className="text-lg font-semibold mb-3 font-philosopher">Shree Samadhan Hospital Of Ayurveda</h3>
-            <p className="text-white/80 text-sm leading-relaxed">
+            <p className="text-white/80 text-sm leading-relaxed mb-6">
               Traditional Ayurvedic healing for modern wellness needs
             </p>
+            
+            {/* Social Media Links (Added Here) */}
+            <div className="flex items-center space-x-4">
+              <a 
+                href="https://www.linkedin.com/in/dr-sakshi-mittal-848117230" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 group"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
+              </a>
+              <a 
+                href="https://www.instagram.com/shree_samadhan_ayurveda/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 group"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
+              </a>
+
+               <a 
+                href="https://www.facebook.com/share/1Bn4GiKRe7/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 group"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}

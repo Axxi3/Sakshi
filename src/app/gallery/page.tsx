@@ -248,25 +248,7 @@ const GalleryPage: React.FC = () => {
                     />
                     
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <h3 className="text-white font-philosopher text-lg font-semibold mb-1">
-                          {image.title}
-                        </h3>
-                        {image.description && (
-                          <p className="text-white/80 text-sm">
-                            {image.description}
-                          </p>
-                        )}
-                      </div>
-                      
-                      {/* Zoom Icon */}
-                      <div className="absolute top-4 right-4">
-                        <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                          <ZoomIn className="w-5 h-5 text-white" />
-                        </div>
-                      </div>
-                    </div>
+                   
                   </div>
                 </motion.div>
               ))}
@@ -306,73 +288,7 @@ const GalleryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Lightbox Modal */}
-      <AnimatePresence>
-        {selectedImage && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-            onClick={closeLightbox}
-          >
-            <div className="relative max-w-6xl max-h-[90vh] w-full">
-              {/* Close Button */}
-              <button
-                onClick={closeLightbox}
-                className="absolute top-4 right-4 z-10 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors duration-200"
-              >
-                <X className="w-6 h-6" />
-              </button>
-
-              {/* Navigation Buttons */}
-              <button
-                onClick={(e) => { e.stopPropagation(); prevImage(); }}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors duration-200"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-
-              <button
-                onClick={(e) => { e.stopPropagation(); nextImage(); }}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors duration-200"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-
-              {/* Image */}
-              <motion.div
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.9, opacity: 0 }}
-                className="bg-white rounded-2xl overflow-hidden shadow-2xl"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <img 
-                  src={selectedImage.src}
-                  alt={selectedImage.alt}
-                  className="w-full h-auto max-h-[70vh] object-contain"
-                />
-                
-                {/* Image Info */}
-                <div className="p-6">
-                  <h3 className="font-philosopher text-2xl font-semibold text-[#2d3020] mb-2">
-                    {selectedImage.title}
-                  </h3>
-                  {selectedImage.description && (
-                    <p className="text-[#6b6b6b] leading-relaxed">
-                      {selectedImage.description}
-                    </p>
-                  )}
-                  <div className="text-sm text-[#8b8680] mt-4">
-                    Image {currentIndex + 1} of {filteredImages.length}
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+   
     </div>
   );
 };

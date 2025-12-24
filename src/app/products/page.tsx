@@ -7,12 +7,13 @@ import { Product, FilterOptions } from './interface';
 
 // Mock data - replace with your API calls
 const mockProducts: Product[] = [
-   {
+  {
     id: 1,
     name: "Gulkand",
-    price: 75,
-    originalPrice: 130,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/1.jpg?updatedAt=1758807321598", // Gulkand with red rose label
+    price: 1299,
+    originalPrice: 1499,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/1.jpg?updatedAt=1758807321598",
+    description: "Natural Pitta balance with cooling herbs for digestion & energy.",
     category: "Ayurvedic Food",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.6,
@@ -22,9 +23,10 @@ const mockProducts: Product[] = [
   {
     id: 2,
     name: "Keshamrit Hair Oil",
-    price: 120,
-    originalPrice: 200,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/4%20-%20Copy.jpg?updatedAt=1758807321917", // Three hair oil bottles
+    price: 599,
+    originalPrice: 699,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/4%20-%20Copy.jpg?updatedAt=1758807321917",
+    description: "Handmade Ayurvedic oil reduces hair fall & promotes growth.",
     category: "Hair Care",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.5,
@@ -33,22 +35,24 @@ const mockProducts: Product[] = [
   },
   {
     id: 3,
-    name: "Suvarnaprashana Avaleha",
-    price: 89,
-    originalPrice: 150,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/2.jpg?updatedAt=1758807322131", // Three small jars with Sanskrit labels
+    name: "Suwarnprashan Avleha",
+    price: 2400,
+    originalPrice: 2600,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/2.jpg?updatedAt=1758807322131",
+    description: "Boosts children's immunity, memory & overall development.",
     category: "Ayurvedic Medicine",
     brand: "Shree Samadhan Ayurveda",
-    rating: 4.2,
-    reviews: 63,
+    rating: 4.8,
+    reviews: 52,
     inStock: true,
   },
   {
     id: 4,
-    name: "VaricoVeda Oil",
-    price: 95,
-    originalPrice: 160,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/7.jpg?updatedAt=1758807321661", // White spray bottle with Samviran branding
+    name: "Varicoveda Oil",
+    price: 699,
+    originalPrice: 799,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/7.jpg?updatedAt=1758807321661",
+    description: "Reduces varicose vein swelling, pain & improves circulation.",
     category: "Therapeutic Oil",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.9,
@@ -57,53 +61,110 @@ const mockProducts: Product[] = [
   },
   {
     id: 5,
-    name: "Kesha Griha Roll On",
-    price: 120,
-    originalPrice: 200,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/6.jpg?updatedAt=1758807321397", // Two golden roll-on bottles
+    name: "Kesh Grow Roll on",
+    price: 999,
+    originalPrice: 1199,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/6.jpg?updatedAt=1758807321397",
+    description: "Easy roll-on promotes hair growth & prevents hair fall.",
     category: "Hair Care",
     brand: "Shree Samadhan Ayurveda",
-    rating: 4.8,
-    reviews: 37,
+    rating: 4.7,
+    reviews: 41,
     inStock: true,
   },
   {
     id: 6,
-    name: "Shat Dhaut Ghrita Elixir",
-    price: 89,
-    originalPrice: 150,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/3%20-%20Copy.jpg?updatedAt=1758807321679", // Three small jars with black lids
+    name: "Shatdhaut Ghrita Elixir",
+    price: 499,
+    originalPrice: 599,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/3%20-%20Copy.jpg?updatedAt=1758807321679",
+    description: "100x churned ghee soothes skin, burns & inflammation.",
     category: "Ayurvedic Medicine",
     brand: "Shree Samadhan Ayurveda",
-    rating: 4.2,
-    reviews: 94,
+    rating: 4.6,
+    reviews: 73,
     inStock: true,
   },
   {
     id: 7,
-    name: "Vata Kapha Soothing Candies",
-    price: 65,
-    originalPrice: 110,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/8.jpg?updatedAt=1758807354818", // Brown pouches with candies
+    name: "Vatakapha Soothing Candies",
+    price: 299,
+    originalPrice: 399,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/8.jpg?updatedAt=1758807354818",
+    description: "Relieves sore throat, boosts appetite & strengthens voice.",
     category: "Ayurvedic Supplements",
     brand: "Shree Samadhan Ayurveda",
-    rating: 4.6,
-    reviews: 45,
+    rating: 4.5,
+    reviews: 38,
     inStock: true,
   },
   {
     id: 8,
-    name: "Srot Ashudhara",
-    price: 89,
-    originalPrice: 150,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/5%20-%20Copy.jpg?updatedAt=1758807321279", // Single jar with red and white label
+    name: "Satva Amritprash",
+    price: 2400,
+    originalPrice: 2600,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/Screenshot%202025-12-24%20103103.png",
+    description: "Boosts libido, vitality & improves semen quality.",
     category: "Ayurvedic Medicine",
     brand: "Shree Samadhan Ayurveda",
-    rating: 4.2,
-    reviews: 68,
+    rating: 4.7,
+    reviews: 29,
+    inStock: true,
+  },
+  {
+    id: 9,
+    name: "Pitta Soothing Candies",
+    price: 299,
+    originalPrice: 399,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/Screenshot%202025-12-24%20102551.png",
+    description: "Cools Pitta, aids digestion & reduces itching/rashes.",
+    category: "Ayurvedic Supplements",
+    brand: "Shree Samadhan Ayurveda",
+    rating: 4.6,
+    reviews: 34,
+    inStock: true,
+  },
+  {
+    id: 10,
+    name: "Sattva Roll On",
+    price: 999,
+    originalPrice: 1199,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/Screenshot%202025-12-24%20102721.png",
+    description: "Balances mind, boosts digestion with soothing aroma.",
+    category: "Ayurvedic Supplements",
+    brand: "Shree Samadhan Ayurveda",
+    rating: 4.8,
+    reviews: 45,
+    inStock: true,
+  },
+  {
+    id: 11,
+    name: "Shree Rasayanam",
+    price: 899,
+    originalPrice: 999,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/WhatsApp%20Image%202025-12-24%20at%2010.31.34%20AM.jpeg",
+    description: "For kids under 18: boosts metabolism & immunity.",
+    category: "Ayurvedic Supplements",
+    brand: "Shree Samadhan Ayurveda",
+    rating: 4.4,
+    reviews: 22,
+    inStock: true,
+  },
+  {
+    id: 12,
+    name: "Shree Prabala Avleha",
+    price: 1800,
+    originalPrice: 2000,
+    image: "https://ik.imagekit.io/oa7uh5z0ty/WhatsApp%20Image%202025-12-24%20at%2010.31.34%20AM%20(1).jpeg",
+    description: "For adults 18+: balances Tridoshas & strengthens bones.",
+    category: "Ayurvedic Medicine",
+    brand: "Shree Samadhan Ayurveda",
+    rating: 4.9,
+    reviews: 61,
     inStock: true,
   },
 ];
+
 
 
 
@@ -157,7 +218,7 @@ export default function ProductPage() {
 
           {/* Products */}
           <div className="flex-1">
-            <ProductGrid products={filteredProducts} />
+            <ProductGrid products={mockProducts} />
           </div>
         </div>
       </div>

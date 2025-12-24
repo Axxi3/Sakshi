@@ -61,7 +61,9 @@ const Navbar = () => {
               <div className="w-px h-5 bg-white/30 mx-2"></div>
               <NavLink href="/gallery" label="Gallery" />
               <div className="w-px h-5 bg-white/30 mx-2"></div>
-              <NavLink href="https://wa.me/917454058199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F" label="Contact" />
+              <NavLink href="/achievements" label="Achievements" />
+              <div className="w-px h-5 bg-white/30 mx-2"></div>
+              <NavLink href="/contact" label="Contact" />
             </div>
           </div>
 

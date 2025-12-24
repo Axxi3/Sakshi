@@ -6,12 +6,14 @@ import ProcessSection from "./component/Home/process";
 import TestimonialSection from "./component/Home/Testmonails";
 import GallerySection from "./component/Home/Gallery";
 import FAQSection from "./component/Home/FAQ";
+import ReelsCarousel from "./component/Home/ReelsCarousel";
 
 export default function Home() {
   return (
     <>
    <HeroSection/>
    <AboutSection/>
+ 
    <TreatmentsSection/>
    <ProcessSection/>
    <TestimonialSection/>

@@ -1,6 +1,7 @@
 // components/ProcessSection.tsx
 'use client'
 
+import Link from 'next/link';
 import React from 'react';
 
 interface ProcessStep {
@@ -97,9 +98,9 @@ const ProcessSection = () => {
             Ready to begin your wellness journey? Let our experienced practitioners guide you through each step.
           </p>
           
-          <button className="bg-[#87241A] hover:bg-[#C84F1A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base">
+          <Link href="/contact" className="bg-[#87241A] hover:bg-[#C84F1A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base">
             Start Your Journey
-          </button>
+          </Link>
         </div>
       </div>
     </section>

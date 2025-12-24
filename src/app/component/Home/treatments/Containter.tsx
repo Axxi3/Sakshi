@@ -6,64 +6,66 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 const DiseasesSection = () => {
-  const diseases = [
-    {
-      id: 1,
-      name: "Joint Problems",
-      icon: "🦴",
-      description: "Comprehensive treatment for arthritis, joint pain, and mobility issues",
-      image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=474,h=474,fit=crop/AGBGGww0nbhV780Q/1-sm511353-dWxllXOBlnck7bXO.jpg"
-    },
-    {
-      id: 2,
-      name: "Respiratory Diseases",
-      icon: "🫁",
-      description: "Natural healing for asthma, bronchitis, and breathing disorders",
-      image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=474,h=474,fit=crop/AGBGGww0nbhV780Q/20-sm688352-m5KvvVnL2vTjqqPw.jpg"
-    },
-    {
-      id: 3,
-      name: "Digestive Disorders",
-      icon: "🫃",
-      description: "Holistic approach to IBS, gastritis, and digestive imbalances",
-      image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=474,h=474,fit=crop/AGBGGww0nbhV780Q/220-sm674646-AoPeeBJqJougZNxa.jpg"
-    },
-    {
-      id: 4,
-      name: "Skin Diseases",
-      icon: "✨",
-      description: "Ayurvedic solutions for eczema, psoriasis, and skin conditions",
-      image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=474,h=474,fit=crop/AGBGGww0nbhV780Q/images-1-A3Qpp07On7hMqQW0.jpeg"
-    },
-    {
-      id: 5,
-      name: "Kidney Disorders",
-      icon: "🫘",
-      description: "Traditional remedies for kidney stones and renal health",
-      image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=474,h=474,fit=crop/AGBGGww0nbhV780Q/images-AVLJJwapK6u7ZZxn.jpeg"
-    },
-    {
-      id: 6,
-      name: "Liver Diseases",
-      icon: "🟤",
-      description: "Detoxification and liver function restoration therapies",
-      image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=474,h=474,fit=crop/AGBGGww0nbhV780Q/download-mP4ppqM2o2hXQbaP.jpeg"
-    },
-    {
-      id: 7,
-      name: "Urinary Diseases",
-      icon: "💧",
-      description: "Natural treatment for UTI and urinary tract disorders",
-      image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=474,h=474,fit=crop/AGBGGww0nbhV780Q/download-1-ALpJJEP7pVtqWw9A.jpeg"
-    },
-    {
-      id: 8,
-      name: "Gynaecological Issues",
-      icon: "🌺",
-      description: "Women's health and reproductive wellness solutions",
-      image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=474,h=474,fit=crop/AGBGGww0nbhV780Q/97979810-AzGrrqNexEFWrP6R.webp"
-    }
-  ];
+ const diseases = [
+  {
+    id: 1,
+    name: "Joint Problems",
+    icon: "🦴",
+    description: "Chronic pain, RA, OA, AVN, Cervical & Lumbar spondylitis",
+    image: "/diseases/1.png"
+  },
+  {
+    id: 2,
+    name: "Respiratory Diseases",
+    icon: "🫁",
+    description: "Asthma, Rhinitis, Sinusitis, Bronchitis, Chronic cough",
+    image: "/diseases/2.png"
+  },
+  {
+    id: 3,
+    name: "Digestive Disorders",
+    icon: "🫃",
+    description: "IBS, Gastritis, Acidity, Ulcers, Lactose intolerance, GERD",
+    image: "/diseases/3.png"
+  },
+  {
+    id: 4,
+    name: "Skin Diseases",
+    icon: "✨",
+    description: "Eczema, Psoriasis, Fungal, Acne, Vitiligo",
+    image: "/diseases/4.png"
+  },
+  {
+    id: 5,
+    name: "Kidney Disorders",
+    icon: "🫘",
+    description: "CKD, Kidney stones, Renal failure",
+    image: "/diseases/5.png"
+  },
+  {
+    id: 6,
+    name: "Liver Diseases",
+    icon: "🟤",
+    description: "Fatty liver, Alcoholic liver disease, Recurrent fever",
+    image: "/diseases/6.png"
+  },
+  {
+    id: 7,
+    name: "Urinary Diseases",
+    icon: "💧",
+    description: "Recurrent UTI, Incontinence, BPH, Dribbling urine",
+    image: "/diseases/7.png"
+  },
+  {
+    id: 8,
+    name: "Gynaecological Issues",
+    icon: "🌺",
+    description: "PCOD/PCOS, Irregular/painful periods, Leucorrhea, Infections",
+    image: "/diseases/8.png"
+  },
+ 
+];
+
 
   return (
     <section className="py-16 sm:py-20 relative overflow-hidden">
@@ -113,9 +115,7 @@ const DiseasesSection = () => {
                   alt={disease.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 text-3xl z-20">
-                  {disease.icon}
-                </div>
+              
               </div>
 
               {/* Content */}

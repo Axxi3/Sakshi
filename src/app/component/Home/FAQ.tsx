@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 import Link from 'next/link';
+import GlobalPresence from './maps';
 
 interface FAQ {
   id: number;
@@ -140,24 +141,10 @@ const FAQSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Contact Support */}
-        <div className="text-center mt-16">
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/50">
-            <h3 className="font-philosopher text-xl md:text-2xl text-[#2d3020] mb-4">
-              Still have questions?
-            </h3>
-            <p className="text-[#6b6b6b] text-sm md:text-base mb-6">
-              Our wellness experts are here to help you on your Ayurvedic journey.
-            </p>
-            <Link
-              href={"https://wa.me/917454058199?text=Hey%2C%20I%20want%20to%20visit%20you.%20When%20are%20you%20free%20to%20attend%20me%3F"}
-              className="bg-[#8b8680] hover:bg-[#7a7570] text-white px-8 py-3 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Contact Support
-            </Link>
-          </div>
-        </div>
+      
       </div>
+
+       <GlobalPresence/>
     </section>
   );
 };

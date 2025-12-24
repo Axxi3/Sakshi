@@ -21,7 +21,6 @@ interface Treatment {
 
 // Existing + New Procedures
 const treatmentsData: Treatment[] = [
-
   {
     id: 'alabu-chikitsa',
     title: 'Alabu Chikitsa',
@@ -32,8 +31,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Localised swelling', 'Skin disorders', 'Joint pain'],
     benefits: ['Improved circulation', 'Pain relief', 'Detoxification', 'Reduced inflammation'],
     price: 'From ₹1,500',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=468,h=468,fit=crop/AGBGGww0nbhV780Q/photo-2024-05-12-12-30-32-2-mp8nve4BMPsDzDeZ.jpg',
+    image: '/treatments/1.png',
     featured: false,
   },
   {
@@ -46,8 +44,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Joint disorders', 'Chronic pain', 'Tendinitis'],
     benefits: ['Instant pain relief', 'Improved mobility', 'Stimulates healing'],
     price: 'From ₹2,000',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=468,h=468,fit=crop/AGBGGww0nbhV780Q/photo-2024-05-12-12-30-33-YBgprLjJEnhxMGke.jpg',
+    image: '/treatments/2.png',
     featured: false,
   },
   {
@@ -60,8 +57,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Minor surgical needs', 'Removal of growths', 'Skin ailments'],
     benefits: ['Minimally invasive', 'Quick recovery', 'Natural healing support'],
     price: 'From ₹2,500',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=468,h=468,fit=crop/AGBGGww0nbhV780Q/photo-2024-05-12-12-29-28-Yg2lWO4E9rtp602n.jpg',
+    image: '/treatments/3.png',
     featured: false,
   },
   {
@@ -74,8 +70,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Skin diseases', 'Varicose veins', 'Gout'],
     benefits: ['Detoxification', 'Improved blood flow', 'Reduced inflammation'],
     price: 'From ₹1,500',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=468,h=468,fit=crop/AGBGGww0nbhV780Q/photo-2024-05-12-12-29-27-2-YKbJ6L879EuReB5w.jpg',
+    image: '/treatments/4.png',
     featured: false,
   },
   {
@@ -88,8 +83,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Infertility', 'Menstrual disorders', 'Urinary tract issues'],
     benefits: ['Reproductive health', 'Hormonal balance', 'Strengthens bladder/uterus'],
     price: 'From ₹3,000',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=468,h=468,fit=crop/AGBGGww0nbhV780Q/photo-2024-05-12-12-29-27-dOqbyrZwqqUNOE50.jpg',
+    image: '/treatments/5.png',
     featured: false,
   },
   {
@@ -102,8 +96,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Chronic abscess', 'Joint pain', 'Localized infection'],
     benefits: ['Quick healing', 'Pain relief', 'Removes stagnated toxins'],
     price: 'From ₹2,200',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=468,h=468,fit=crop/AGBGGww0nbhV780Q/photo-2024-05-12-12-29-28-2-AE0po573oyFwERX7.jpg',
+    image: '/treatments/6.png',
     featured: false,
   },
   {
@@ -116,8 +109,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Varicose veins', 'Psoriasis', 'Joint pain', 'Non-healing wounds'],
     benefits: ['Improved circulation', 'Detoxification', 'Pain relief'],
     price: 'From ₹1,800',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=468,h=468,fit=crop/AGBGGww0nbhV780Q/photo-2024-05-12-12-30-32-AzGreEMa5afZZEDp.jpg',
+    image: '/treatments/7.png',
     featured: false,
   },
   {
@@ -130,8 +122,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Joint swelling', 'Skin rashes', 'Muscle pain'],
     benefits: ['Reduced swelling', 'Relieves pain', 'Skin healing'],
     price: 'From ₹900',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=468,h=468,fit=crop/AGBGGww0nbhV780Q/photo-2024-05-12-12-29-29-YX4PyWjOP9fbKBeP.jpg',
+    image: '/treatments/8.png',
     featured: false,
   },
   {
@@ -144,8 +135,7 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Muscle stiffness', 'Detox', 'Back pain'],
     benefits: ['Pain relief', 'Better circulation', 'Relaxation'],
     price: 'From ₹1,200',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=334,fit=crop/AGBGGww0nbhV780Q/img_9263-AE0a5GBaMOFqpqko.jpg',
+    image: '/treatments/9.png',
     featured: false,
   },
   {
@@ -158,12 +148,24 @@ const treatmentsData: Treatment[] = [
     suitableFor: ['Skin diseases', 'Gout', 'High pitta conditions'],
     benefits: ['Blood purification', 'Reduced inflammation', 'Improved immunity'],
     price: 'From ₹1,500',
-    image:
-      'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=335,fit=crop/AGBGGww0nbhV780Q/img_9471-m6LjqGNNeyf41Qj1.jpg',
+    image: '/treatments/10.png',
     featured: false,
   },
-  
+  {
+    id: 'sattva-vajaya',
+    title: 'Sattva Vajaya Chikitsa',
+    shortDescription: 'Ayurvedic psychotherapy for mental clarity and emotional balance.',
+    fullDescription:
+      'Sattva Vajaya Chikitsa is a specialized Ayurvedic psychotherapy that focuses on controlling the mind and restraining it from unwholesome objects. It combines spiritual knowledge, patience, and meditation to treat stress, anxiety, and emotional disturbances.',
+    duration: '45-60 minutes',
+    suitableFor: ['Anxiety & Depression', 'Stress Management', 'Emotional Trauma'],
+    benefits: ['Mental Clarity', 'Emotional Stability', 'Improved Focus', 'Inner Peace'],
+    price: 'From ₹2,000',
+    image: '/treatments/11.png',
+    featured: false,
+  },
 ];
+
 
 
 
@@ -210,21 +212,7 @@ const TreatmentCard = ({ treatment, index }: { treatment: Treatment; index: numb
               </span>
             ))}
           </div>
-          <div className="flex items-center justify-between pt-2">
-            <div className="flex items-center space-x-1 text-xs text-[#8b8680]">
-              <Clock className="w-4 h-4" />
-              <span>{treatment.duration}</span>
-            </div>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group/link inline-flex items-center space-x-2 text-[#8b8680] hover:text-[#2d3020] font-medium text-sm transition-all duration-300"
-            >
-              <span>Learn More</span>
-              <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" />
-            </a>
-          </div>
+        
         </div>
       </div>
     </motion.div>
