@@ -103,7 +103,7 @@ const mockProducts: Product[] = [
     name: "Satva Amritprash",
     price: 2400,
     originalPrice: 2600,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/Screenshot%202025-12-24%20103103.png",
+    image: "/agg.png",
     description: "Boosts libido, vitality & improves semen quality.",
     category: "Ayurvedic Medicine",
     brand: "Shree Samadhan Ayurveda",
@@ -116,7 +116,7 @@ const mockProducts: Product[] = [
     name: "Pitta Soothing Candies",
     price: 299,
     originalPrice: 399,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/Screenshot%202025-12-24%20102551.png",
+    image: "/psc.png",
     description: "Cools Pitta, aids digestion & reduces itching/rashes.",
     category: "Ayurvedic Supplements",
     brand: "Shree Samadhan Ayurveda",
@@ -129,7 +129,7 @@ const mockProducts: Product[] = [
     name: "Sattva Roll On",
     price: 999,
     originalPrice: 1199,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/Screenshot%202025-12-24%20102721.png",
+    image: "/sro.png",
     description: "Balances mind, boosts digestion with soothing aroma.",
     category: "Ayurvedic Supplements",
     brand: "Shree Samadhan Ayurveda",
@@ -142,7 +142,7 @@ const mockProducts: Product[] = [
     name: "Shree Rasayanam",
     price: 899,
     originalPrice: 999,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/WhatsApp%20Image%202025-12-24%20at%2010.31.34%20AM.jpeg",
+    image: "/sr.png",
     description: "For kids under 18: boosts metabolism & immunity.",
     category: "Ayurvedic Supplements",
     brand: "Shree Samadhan Ayurveda",
@@ -155,12 +155,25 @@ const mockProducts: Product[] = [
     name: "Shree Prabala Avleha",
     price: 1800,
     originalPrice: 2000,
-    image: "https://ik.imagekit.io/oa7uh5z0ty/WhatsApp%20Image%202025-12-24%20at%2010.31.34%20AM%20(1).jpeg",
+    image: "/last.png",
     description: "For adults 18+: balances Tridoshas & strengthens bones.",
     category: "Ayurvedic Medicine",
     brand: "Shree Samadhan Ayurveda",
     rating: 4.9,
     reviews: 61,
+    inStock: true,
+  },
+  {
+    id: 13,
+    name: "Agni Sandeepak",
+    price: 599,
+    originalPrice: 699,
+    image: "/asp.png",
+    description: "Helps to increase metabolism, increase appetite, and helps in absorption.",
+    category: "Ayurvedic Medicine",
+    brand: "Shree Samadhan Ayurveda",
+    rating: 4.8,
+    reviews: 35,
     inStock: true,
   },
 ];
@@ -202,8 +215,8 @@ export default function ProductPage() {
           <h1 className="text-2xl font-medium text-gray-900 mb-8">
             Discover unique finds
           </h1>
-          
-          <SearchBar 
+
+          <SearchBar
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
             onFilterToggle={() => setShowFilters(!showFilters)}
@@ -214,14 +227,14 @@ export default function ProductPage() {
         <div className="flex gap-12">
           {/* Filters */}
 
-          </div>
+        </div>
 
-          {/* Products */}
-          <div className="flex-1">
-            <ProductGrid products={mockProducts} />
-          </div>
+        {/* Products */}
+        <div className="flex-1">
+          <ProductGrid products={mockProducts} />
         </div>
       </div>
+    </div>
 
   );
 }

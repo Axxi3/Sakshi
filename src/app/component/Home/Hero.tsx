@@ -25,7 +25,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap items-center space-x-2 mb-6 sm:mb-4">
             <div className="flex items-center space-x-1 bg-white/10 backdrop-blur-md rounded-full px-3 py-1.5 sm:px-4 sm:py-2 border border-white/20">
               <span className="text-white text-xs sm:text-sm font-medium">
-                Trusted by 3000+ Customers
+                Trusted by 3000+ Patients
               </span>
             </div>
           </div>

@@ -152,8 +152,8 @@ const treatmentsData: Treatment[] = [
     featured: false,
   },
   {
-    id: 'sattva-vajaya',
-    title: 'Sattva Vajaya Chikitsa',
+    id: 'sattva-therapy',
+    title: 'Sattva Therapy',
     shortDescription: 'Ayurvedic psychotherapy for mental clarity and emotional balance.',
     fullDescription:
       'Sattva Vajaya Chikitsa is a specialized Ayurvedic psychotherapy that focuses on controlling the mind and restraining it from unwholesome objects. It combines spiritual knowledge, patience, and meditation to treat stress, anxiety, and emotional disturbances.',

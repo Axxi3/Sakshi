@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
       {/* Background decorative elements */}
       <div className="absolute top-10 right-20 w-32 h-32 bg-white/5 rounded-full -z-10"></div>
       <div className="absolute bottom-20 left-10 w-24 h-24 bg-white/5 rounded-full -z-10"></div>
-      
+
       <div className="max-w-7xl mx-auto px-6">
         {/* Main Footer Content */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -36,21 +36,21 @@ const Footer: React.FC = () => {
             <p className="text-white/80 text-sm leading-relaxed mb-6">
               Traditional Ayurvedic healing for modern wellness needs
             </p>
-            
+
             {/* Social Media Links (Added Here) */}
             <div className="flex items-center space-x-4">
-              <a 
-                href="https://www.linkedin.com/in/dr-sakshi-mittal-848117230" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/dr-sakshi-mittal-848117230"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 group"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
               </a>
-              <a 
-                href="https://www.instagram.com/shree_samadhan_ayurveda/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/shree_samadhan_ayurveda/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 group"
                 aria-label="Instagram"
@@ -58,9 +58,9 @@ const Footer: React.FC = () => {
                 <Instagram className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
               </a>
 
-               <a 
-                href="https://www.facebook.com/share/1Bn4GiKRe7/?mibextid=wwXIfr" 
-                target="_blank" 
+              <a
+                href="https://www.facebook.com/share/1Bn4GiKRe7/?mibextid=wwXIfr"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 group"
                 aria-label="Facebook"
@@ -113,32 +113,57 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li>
                 <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
-                  Panchakarma
+                  Alabu Chikitsa
                 </Link>
               </li>
               <li>
                 <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
-                  Abhyanga Massage
+                  AgniKarma Chikitsa
                 </Link>
               </li>
               <li>
                 <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
-                  Shirodhara Therapy
+                  Vidhikarma Chikitsa
                 </Link>
               </li>
               <li>
                 <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
-                  Nasya Treatment
+                  Siravedhan Chikista
                 </Link>
               </li>
               <li>
                 <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
-                  Udvartana
+                  Uttar Basti Chikista
                 </Link>
               </li>
               <li>
                 <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
-                  Marma Therapy
+                  AgniViddh Chikitsa
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                  Leech Chikitsa
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                  Lepa Chikitsa
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                  Fire Cupping
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                  Raktamokshan
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments" className="text-white/80 hover:text-orange-400 transition-colors duration-200 text-sm">
+                  Sattva Therapy
                 </Link>
               </li>
             </ul>
@@ -176,21 +201,22 @@ const Footer: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-orange-400 flex-shrink-0" />
                 <div>
                   <p className="text-white/80 text-sm">+91 74540 58199</p>
                 </div>
               </div>
-              
+
             </div>
 
             {/* Working Hours */}
             <div className="mt-8">
               <h5 className="text-white font-semibold mb-3 text-sm">Working Hours</h5>
               <div className="text-white/80 text-sm space-y-1">
-                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                <p>Mon - Sat: 10:00 AM - 2:00 PM</p>
+                <p>4:00 PM - 7:00 PM</p>
               </div>
             </div>
           </div>
